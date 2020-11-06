@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LivrariaSaharan
 {
-    public partial class Form1 : Form
+    public partial class Consulta : Form
     {
-        public Form1()
+        public Consulta()
         {
             InitializeComponent();
+        }
+
+        private void consultaClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
