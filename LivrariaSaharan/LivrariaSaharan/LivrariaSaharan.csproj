@@ -32,9 +32,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,11 +57,11 @@
     <Compile Include="Terminal.Designer.cs">
       <DependentUpon>Terminal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tela Principal.cs">
+    <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tela Principal.Designer.cs">
-      <DependentUpon>Tela Principal.cs</DependentUpon>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,8 +77,8 @@
     <Compile Include="Venda.Designer.cs">
       <DependentUpon>Venda.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tela Principal.resx">
-      <DependentUpon>Tela Principal.cs</DependentUpon>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

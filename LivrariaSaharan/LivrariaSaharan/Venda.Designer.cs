@@ -41,11 +41,13 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.vendaCPF = new System.Windows.Forms.TextBox();
             this.btnChecarCadastro = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.vendaNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.vendaEndereco = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +105,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(752, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 95);
             this.pictureBox1.TabIndex = 0;
@@ -125,7 +127,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 54);
+            this.label1.Location = new System.Drawing.Point(293, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 39);
             this.label1.TabIndex = 2;
@@ -152,7 +154,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(554, 515);
+            this.button2.Location = new System.Drawing.Point(552, 524);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 39);
             this.button2.TabIndex = 8;
@@ -163,22 +165,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(827, 148);
+            this.label3.Location = new System.Drawing.Point(536, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(198, 31);
             this.label3.TabIndex = 9;
             this.label3.Text = "Dados Cliente";
             // 
-            // textBox1
+            // vendaCPF
             // 
-            this.textBox1.Location = new System.Drawing.Point(752, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
-            this.textBox1.TabIndex = 10;
+            this.vendaCPF.Location = new System.Drawing.Point(579, 222);
+            this.vendaCPF.Name = "vendaCPF";
+            this.vendaCPF.Size = new System.Drawing.Size(192, 20);
+            this.vendaCPF.TabIndex = 10;
             // 
             // btnChecarCadastro
             // 
-            this.btnChecarCadastro.Location = new System.Drawing.Point(950, 206);
+            this.btnChecarCadastro.Location = new System.Drawing.Point(777, 219);
             this.btnChecarCadastro.Name = "btnChecarCadastro";
             this.btnChecarCadastro.Size = new System.Drawing.Size(75, 23);
             this.btnChecarCadastro.TabIndex = 11;
@@ -189,39 +191,58 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label4.Location = new System.Drawing.Point(712, 208);
+            this.label4.Location = new System.Drawing.Point(539, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 17);
             this.label4.TabIndex = 12;
             this.label4.Text = "CPF";
             // 
-            // textBox2
+            // vendaNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(752, 258);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(273, 20);
-            this.textBox2.TabIndex = 13;
+            this.vendaNome.Location = new System.Drawing.Point(579, 258);
+            this.vendaNome.Name = "vendaNome";
+            this.vendaNome.Size = new System.Drawing.Size(273, 20);
+            this.vendaNome.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label5.Location = new System.Drawing.Point(701, 258);
+            this.label5.Location = new System.Drawing.Point(528, 258);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "Nome";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label6.Location = new System.Drawing.Point(504, 293);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Endereço";
+            // 
+            // vendaEndereco
+            // 
+            this.vendaEndereco.Location = new System.Drawing.Point(579, 293);
+            this.vendaEndereco.Name = "vendaEndereco";
+            this.vendaEndereco.Size = new System.Drawing.Size(273, 20);
+            this.vendaEndereco.TabIndex = 16;
             // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 599);
+            this.Controls.Add(this.vendaEndereco);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.vendaNome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnChecarCadastro);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.vendaCPF);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnRegistrar);
@@ -258,10 +279,12 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox vendaCPF;
         private System.Windows.Forms.Button btnChecarCadastro;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox vendaNome;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox vendaEndereco;
     }
 }
