@@ -45,5 +45,16 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registroDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Venda form = new Venda();
+            form.Show();
+        }
     }
 }
