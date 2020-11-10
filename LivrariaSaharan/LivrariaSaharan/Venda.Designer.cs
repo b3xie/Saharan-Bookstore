@@ -78,7 +78,7 @@
             this.voltarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1028, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,7 +94,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.richTextBox1.Location = new System.Drawing.Point(170, 524);
+            this.richTextBox1.Location = new System.Drawing.Point(166, 524);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(141, 41);
             this.richTextBox1.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 95);
             this.pictureBox1.TabIndex = 0;
@@ -154,7 +154,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(552, 524);
+            this.button2.Location = new System.Drawing.Point(777, 536);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 39);
             this.button2.TabIndex = 8;
@@ -165,7 +165,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(536, 161);
+            this.label3.Location = new System.Drawing.Point(645, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(198, 31);
             this.label3.TabIndex = 9;
@@ -173,14 +173,14 @@
             // 
             // vendaCPF
             // 
-            this.vendaCPF.Location = new System.Drawing.Point(579, 222);
+            this.vendaCPF.Location = new System.Drawing.Point(723, 222);
             this.vendaCPF.Name = "vendaCPF";
             this.vendaCPF.Size = new System.Drawing.Size(192, 20);
             this.vendaCPF.TabIndex = 10;
             // 
             // btnChecarCadastro
             // 
-            this.btnChecarCadastro.Location = new System.Drawing.Point(777, 219);
+            this.btnChecarCadastro.Location = new System.Drawing.Point(921, 219);
             this.btnChecarCadastro.Name = "btnChecarCadastro";
             this.btnChecarCadastro.Size = new System.Drawing.Size(75, 23);
             this.btnChecarCadastro.TabIndex = 11;
@@ -191,7 +191,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label4.Location = new System.Drawing.Point(539, 222);
+            this.label4.Location = new System.Drawing.Point(648, 225);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 17);
             this.label4.TabIndex = 12;
@@ -199,7 +199,7 @@
             // 
             // vendaNome
             // 
-            this.vendaNome.Location = new System.Drawing.Point(579, 258);
+            this.vendaNome.Location = new System.Drawing.Point(723, 248);
             this.vendaNome.Name = "vendaNome";
             this.vendaNome.Size = new System.Drawing.Size(273, 20);
             this.vendaNome.TabIndex = 13;
@@ -208,7 +208,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label5.Location = new System.Drawing.Point(528, 258);
+            this.label5.Location = new System.Drawing.Point(648, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 14;
@@ -218,7 +218,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label6.Location = new System.Drawing.Point(504, 293);
+            this.label6.Location = new System.Drawing.Point(648, 274);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 15;
@@ -226,7 +226,7 @@
             // 
             // vendaEndereco
             // 
-            this.vendaEndereco.Location = new System.Drawing.Point(579, 293);
+            this.vendaEndereco.Location = new System.Drawing.Point(723, 274);
             this.vendaEndereco.Name = "vendaEndereco";
             this.vendaEndereco.Size = new System.Drawing.Size(273, 20);
             this.vendaEndereco.TabIndex = 16;
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 599);
+            this.ClientSize = new System.Drawing.Size(1028, 599);
             this.Controls.Add(this.vendaEndereco);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

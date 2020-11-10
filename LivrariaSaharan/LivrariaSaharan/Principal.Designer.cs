@@ -47,7 +47,6 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label2 = new System.Windows.Forms.Label();
             this.principalLogoff = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -208,21 +207,11 @@
             this.principalLogoff.Text = "Sair";
             this.principalLogoff.UseVisualStyleBackColor = true;
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(28, 169);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(752, 387);
-            this.webBrowser1.TabIndex = 7;
-            this.webBrowser1.Url = new System.Uri("http://saraiva.com.br", System.UriKind.Absolute);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1097, 603);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.principalLogoff);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.monthCalendar1);
@@ -265,6 +254,5 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button principalLogoff;
-        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
