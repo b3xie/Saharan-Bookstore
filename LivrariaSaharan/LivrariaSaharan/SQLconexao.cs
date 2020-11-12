@@ -16,7 +16,7 @@ namespace LivrariaSaharan
         {
             try
             {
-                String strConexao = @"Data Source=NOTEBOOK\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=1234";
+                String strConexao = @"Data Source="+ Environment.MachineName +@"\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;
