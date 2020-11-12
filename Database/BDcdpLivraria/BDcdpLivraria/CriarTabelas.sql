@@ -9,7 +9,7 @@ GO
 
 CREATE TABLE tblSexo(
 	idSexo INT NOT NULL PRIMARY KEY,
-	Sexo CHAR(10)
+	Sexo CHAR(20)
 )
 
 CREATE TABLE tblExpediente (
@@ -24,7 +24,7 @@ CREATE TABLE tblFuncionario(
 	Nome CHAR(100),
 	Sexo INT FOREIGN KEY REFERENCES tblSexo,
 	Expediente INT FOREIGN KEY REFERENCES tblExpediente,
-	Telefone CHAR(11),
+	Telefone CHAR(20),
 	email CHAR(70),
 	RG CHAR(11),
 	CPF CHAR(11),
@@ -114,3 +114,17 @@ CREATE TABLE tblJogos(
 	Publicadora CHAR(50),
 	Genero INT FOREIGN KEY REFERENCES tblGenero
 )
+
+
+
+INSERT INTO tblSexo VALUES (1,'Masculino'),(2,'Feminino'),(3,'Não binario')
+INSERT INTO tblExpediente VALUES (1,'Manha','3:00','11:00'),(2,'Tarde','11:00','19:00'),(3,'Noite','19:00','3:00')
+INSERT INTO tblFuncionario (Nome,Sexo,Expediente,Telefone,email,RG,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento,Salario,senhaLogin)
+VALUES 
+('Edson Shu',1,1,'(21)942069696','edsondelicinha@totoso.kp',694204207,17490234816,'SP','Diadema','Santana','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234)
+
+INSERT INTO tblCliente (Nome,Sexo,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereço,Complemento) VALUES 
+('João FranSHUsco',3,'(11)989460300','jofrinha1000@gmail.com','00000000000','SP','São Paulo','Freguesia do Ó','28528185','Rua Doutor Telasko Avara,666','Apartamento 666')
+
+INSERT INTO tblEstoque(DataLote,qtdeEstoque,Preco) VALUES
+(11-12-2020,15,)
