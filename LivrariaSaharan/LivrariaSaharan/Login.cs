@@ -50,16 +50,16 @@ namespace LivrariaSaharan
             {
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Login aceito");
+                    MessageBox.Show("Login aceito");//o que vai acontecer se o login existir
                 }
                 else
                 {
-                    MessageBox.Show("Login negado");
+                    MessageBox.Show("Login negado");//o que vai acontecer se não existir
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("BD não conectou seu otário");
+                MessageBox.Show("Nós nos desculpamos, parece que temos problemas com o Banco de Dados");
             }
 
             
