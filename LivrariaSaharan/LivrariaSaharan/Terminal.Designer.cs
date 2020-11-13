@@ -219,6 +219,7 @@
             // 
             // TextoISBN
             // 
+            this.TextoISBN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextoISBN.Location = new System.Drawing.Point(116, 224);
             this.TextoISBN.Name = "TextoISBN";
             this.TextoISBN.Size = new System.Drawing.Size(425, 72);

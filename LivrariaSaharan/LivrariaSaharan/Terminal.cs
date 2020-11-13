@@ -113,7 +113,7 @@ namespace LivrariaSaharan
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
             String testando = TextoISBN.Text;
-            if (testando.Length == 14 & testando.Length == 13)
+            if (testando.Length == 13)
             {                
                 MessageBox.Show("Consulta feita com suus");
             }
