@@ -16,12 +16,12 @@ namespace LivrariaSaharan
         {
             try
             {
-                if (Environment.MachineName == "マギMAGI-SYSTEM-01") {
+                if (Environment.MachineName == "マギMAGI-SYSTEM-01" || Environment.MachineName == "LAPTOP-E450525M") {
                     String strConexao = @"Data Source=" + Environment.MachineName + ";Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
                     conexao.ConnectionString = strConexao;
                     conexao.Open();
                     return conexao;
-                }else
+                }else 
                 {
                     String strConexao = @"Data Source=" + Environment.MachineName + @"\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
                     conexao.ConnectionString = strConexao;
