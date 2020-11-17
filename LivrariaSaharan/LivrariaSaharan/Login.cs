@@ -50,7 +50,8 @@ namespace LivrariaSaharan
             {
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Login aceito");//o que vai acontecer se o login existir
+                    Principal form = new Principal();
+                    form.ShowDialog();
                 }
                 else
                 {

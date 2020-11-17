@@ -56,5 +56,10 @@ namespace LivrariaSaharan
             Venda form = new Venda();
             form.Show();
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
