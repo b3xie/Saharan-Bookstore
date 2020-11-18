@@ -51,7 +51,8 @@ namespace LivrariaSaharan
                 if (dt.Rows.Count > 0)
                 {
                     Principal form = new Principal();
-                    form.ShowDialog();
+                    form.Show();
+                    
                 }
                 else
                 {
@@ -75,6 +76,11 @@ namespace LivrariaSaharan
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

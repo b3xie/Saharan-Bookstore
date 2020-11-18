@@ -25,10 +25,7 @@ namespace LivrariaSaharan
 
         private void Consulta_Load(object sender, EventArgs e)
         {
-            using (Login EdnaldoPereira = new Login())
-            {
-                EdnaldoPereira.ShowDialog();
-            }
+            
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +55,12 @@ namespace LivrariaSaharan
         }
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consulta form = new Consulta();
+            form.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

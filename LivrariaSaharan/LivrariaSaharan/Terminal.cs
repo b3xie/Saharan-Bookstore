@@ -114,8 +114,10 @@ namespace LivrariaSaharan
         {
             String testando = TextoISBN.Text;
             if (testando.Length == 13)
-            {                
-                MessageBox.Show("Consulta feita com suus");
+            {
+                TerminalResultado form = new TerminalResultado();
+                form.Show();
+
             }
             else 
             {

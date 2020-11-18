@@ -16,5 +16,11 @@ namespace LivrariaSaharan
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Terminal form = new Terminal();
+            form.Show();
+        }
     }
 }
