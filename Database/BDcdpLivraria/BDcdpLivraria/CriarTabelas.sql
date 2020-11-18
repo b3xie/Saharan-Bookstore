@@ -79,7 +79,7 @@ CREATE TABLE tblAlbum(
 )
 
 CREATE TABLE tblMusicas(
-	idMusica INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	ISAN INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	NumEstoque INT FOREIGN KEY REFERENCES tblEstoque,
 	Titulo CHAR(100),
 	Album INT FOREIGN KEY REFERENCES tblAlbum
@@ -123,8 +123,8 @@ INSERT INTO tblFuncionario (Nome,Sexo,Expediente,Telefone,email,RG,CPF,UF,Cidade
 VALUES 
 ('Edson Shu',1,1,'(21)942069696','edsondelicinha@totoso.kp',694204207,17490234816,'SP','Diadema','Santana','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234)
 
-INSERT INTO tblCliente (Nome,Sexo,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereço,Complemento) VALUES 
+INSERT INTO tblCliente (Nome,Sexo,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento) VALUES 
 ('João FranSHUsco',3,'(11)989460300','jofrinha1000@gmail.com','00000000000','SP','São Paulo','Freguesia do Ó','28528185','Rua Doutor Telasko Avara,666','Apartamento 666')
 
 INSERT INTO tblEstoque(DataLote,qtdeEstoque,Preco) VALUES
-(11-12-2020,15,)
+(11-12-2020,15,50)

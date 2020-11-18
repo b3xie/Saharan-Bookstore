@@ -31,8 +31,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.txtNome = new System.Windows.Forms.RichTextBox();
+            this.txtCod = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -41,6 +41,7 @@
             this.sairtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtPesq = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -75,21 +76,21 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Consulta de produtos";
             // 
-            // richTextBox1
+            // txtNome
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(138, 80);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(572, 37);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.txtNome.Location = new System.Drawing.Point(138, 80);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(572, 37);
+            this.txtNome.TabIndex = 3;
+            this.txtNome.Text = "";
             // 
-            // richTextBox2
+            // txtCod
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(138, 123);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(572, 37);
-            this.richTextBox2.TabIndex = 4;
-            this.richTextBox2.Text = "";
+            this.txtCod.Location = new System.Drawing.Point(138, 123);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(572, 37);
+            this.txtCod.TabIndex = 4;
+            this.txtCod.Text = "";
             // 
             // label2
             // 
@@ -133,7 +134,7 @@
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.consultaToolStripMenuItem.Text = "Cadastro";
             this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
@@ -153,10 +154,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 197);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 232);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(935, 343);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // txtPesq
+            // 
+            this.txtPesq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesq.ForeColor = System.Drawing.Color.Red;
+            this.txtPesq.Location = new System.Drawing.Point(609, 178);
+            this.txtPesq.Name = "txtPesq";
+            this.txtPesq.Size = new System.Drawing.Size(101, 39);
+            this.txtPesq.TabIndex = 10;
+            this.txtPesq.Text = "Pesquisar";
+            this.txtPesq.UseVisualStyleBackColor = true;
+            this.txtPesq.Click += new System.EventHandler(this.txtPesq_Click);
             // 
             // Consulta
             // 
@@ -164,12 +177,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(964, 578);
+            this.Controls.Add(this.txtPesq);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtCod);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -193,8 +207,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox txtNome;
+        private System.Windows.Forms.RichTextBox txtCod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -203,5 +217,6 @@
         private System.Windows.Forms.ToolStripMenuItem sairtToolStripMenuItem;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button txtPesq;
     }
 }
