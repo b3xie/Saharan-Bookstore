@@ -76,6 +76,12 @@
     <Compile Include="Consulta.Designer.cs">
       <DependentUpon>Consulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCadastro.Designer.cs">
+      <DependentUpon>ConsultaCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLconexao.cs" />
     <Compile Include="Terminal.cs">
       <SubType>Form</SubType>
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCadastro.resx">
+      <DependentUpon>ConsultaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CDP LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design-space-paper-textured-background_53876-42312.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
