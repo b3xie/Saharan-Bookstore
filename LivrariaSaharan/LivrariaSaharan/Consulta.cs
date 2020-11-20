@@ -35,15 +35,8 @@ namespace LivrariaSaharan
 
             dt = con.executarSQL("SELECT * FROM tblLivros WHERE  Titulo = '" + nome + "' OR ISBN = '" + cod + "'");
 
-            if (dt.Rows.Count > 0)
+            try 
             {
-                BindingSource bs = new BindingSource();
-                bs.DataSource = dt;
-                dataGridView1.DataSource = bs;
-            }
-            else
-            {
-                dt = con.executarSQL("SELECT * FROM tblJogos WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
                 if (dt.Rows.Count > 0)
                 {
                     BindingSource bs = new BindingSource();
@@ -52,7 +45,7 @@ namespace LivrariaSaharan
                 }
                 else
                 {
-                    dt = con.executarSQL("SELECT * FROM tblMusicas WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                    dt = con.executarSQL("SELECT * FROM tblJogos WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
                     if (dt.Rows.Count > 0)
                     {
                         BindingSource bs = new BindingSource();
@@ -61,15 +54,29 @@ namespace LivrariaSaharan
                     }
                     else
                     {
-                        dt = con.executarSQL("SELECT * FROM tblFilmes WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                        dt = con.executarSQL("SELECT * FROM tblMusicas WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
                         if (dt.Rows.Count > 0)
                         {
                             BindingSource bs = new BindingSource();
                             bs.DataSource = dt;
                             dataGridView1.DataSource = bs;
                         }
+                        else
+                        {
+                            dt = con.executarSQL("SELECT * FROM tblFilmes WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                            if (dt.Rows.Count > 0)
+                            {
+                                BindingSource bs = new BindingSource();
+                                bs.DataSource = dt;
+                                dataGridView1.DataSource = bs;
+                            }
+                        }
                     }
                 }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não temos este produto");
             }
         }
     }
