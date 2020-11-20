@@ -58,17 +58,17 @@
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFuncionario.Designer.cs">
+      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroLivro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadastroLivro.Designer.cs">
       <DependentUpon>CadastroLivro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CadastroProduto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroProduto.Designer.cs">
-      <DependentUpon>CadastroProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Consulta.cs">
       <SubType>Form</SubType>
@@ -112,11 +112,11 @@
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastroFuncionario.resx">
+      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroLivro.resx">
       <DependentUpon>CadastroLivro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CadastroProduto.resx">
-      <DependentUpon>CadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>

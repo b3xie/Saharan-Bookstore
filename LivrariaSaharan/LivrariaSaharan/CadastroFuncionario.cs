@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace LivrariaSaharan
 {
-    public partial class CadastroProduto : Form
+    public partial class CadastroFuncionario : Form
     {
-        public CadastroProduto()
+        public CadastroFuncionario()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
