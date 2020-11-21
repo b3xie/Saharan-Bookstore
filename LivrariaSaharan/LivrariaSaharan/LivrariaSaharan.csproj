@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro.Designer.cs">
-      <DependentUpon>Cadastro.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     <Compile Include="Venda.Designer.cs">
       <DependentUpon>Venda.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cadastro.resx">
-      <DependentUpon>Cadastro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastroFuncionario.resx">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>

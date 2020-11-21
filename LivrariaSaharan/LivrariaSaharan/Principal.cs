@@ -64,5 +64,46 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CadastroLivro form = new CadastroLivro();
+            form.Show();
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            Consulta form = new Consulta();
+            form.Show();
+        }
+
+        private void btnVenda_Click(object sender, EventArgs e)
+        {
+            Venda form = new Venda();
+            form.Show();
+        }
+
+        private void btnTerminal_Click(object sender, EventArgs e)
+        {
+            Terminal term = new Terminal();
+            term.Show();
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsultaC_Click(object sender, EventArgs e)
+        {
+            ConsultaCadastro form = new ConsultaCadastro();
+            form.Show();
+        }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            CadastroFuncionario form = new CadastroFuncionario();
+            form.Show();
+        }
     }
 }
