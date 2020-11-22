@@ -69,18 +69,17 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 716);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 718);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1431, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1431, 24);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(472, 20);
-            this.toolStripStatusLabel1.Text = "Vendas Aumentam em 5000% após posse de Michel Temer como CEO";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 18);
             // 
             // monthCalendar1
             // 
@@ -106,7 +105,7 @@
             // 
             this.principalLogoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.75F, System.Drawing.FontStyle.Bold);
             this.principalLogoff.Location = new System.Drawing.Point(1268, 599);
-            this.principalLogoff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.principalLogoff.Margin = new System.Windows.Forms.Padding(4);
             this.principalLogoff.Name = "principalLogoff";
             this.principalLogoff.Size = new System.Drawing.Size(143, 64);
             this.principalLogoff.TabIndex = 6;
@@ -118,7 +117,7 @@
             this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(37, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(336, 127);
             this.pictureBox1.TabIndex = 1;
@@ -128,7 +127,7 @@
             // 
             this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulta.Location = new System.Drawing.Point(227, 34);
-            this.btnConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(195, 119);
             this.btnConsulta.TabIndex = 8;
@@ -140,7 +139,7 @@
             // 
             this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.Location = new System.Drawing.Point(8, 34);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(195, 119);
             this.btnCadastro.TabIndex = 9;
@@ -153,9 +152,9 @@
             this.Produtos.Controls.Add(this.btnConsulta);
             this.Produtos.Controls.Add(this.btnCadastro);
             this.Produtos.Location = new System.Drawing.Point(123, 239);
-            this.Produtos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Produtos.Margin = new System.Windows.Forms.Padding(4);
             this.Produtos.Name = "Produtos";
-            this.Produtos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Produtos.Padding = new System.Windows.Forms.Padding(4);
             this.Produtos.Size = new System.Drawing.Size(429, 183);
             this.Produtos.TabIndex = 10;
             this.Produtos.TabStop = false;
@@ -165,9 +164,9 @@
             // 
             this.groupBox1.Controls.Add(this.btnTerminal);
             this.groupBox1.Location = new System.Drawing.Point(131, 430);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(303, 234);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -177,7 +176,7 @@
             // 
             this.btnTerminal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerminal.Location = new System.Drawing.Point(52, 60);
-            this.btnTerminal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTerminal.Margin = new System.Windows.Forms.Padding(4);
             this.btnTerminal.Name = "btnTerminal";
             this.btnTerminal.Size = new System.Drawing.Size(195, 119);
             this.btnTerminal.TabIndex = 8;
@@ -190,9 +189,9 @@
             this.groupBox2.Controls.Add(this.btnConsultaC);
             this.groupBox2.Controls.Add(this.btnFuncionario);
             this.groupBox2.Location = new System.Drawing.Point(459, 430);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(531, 234);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
@@ -202,7 +201,7 @@
             // 
             this.btnConsultaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultaC.Location = new System.Drawing.Point(19, 29);
-            this.btnConsultaC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultaC.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaC.Name = "btnConsultaC";
             this.btnConsultaC.Size = new System.Drawing.Size(245, 183);
             this.btnConsultaC.TabIndex = 11;
@@ -214,7 +213,7 @@
             // 
             this.btnFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFuncionario.Location = new System.Drawing.Point(272, 29);
-            this.btnFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.btnFuncionario.Name = "btnFuncionario";
             this.btnFuncionario.Size = new System.Drawing.Size(240, 183);
             this.btnFuncionario.TabIndex = 10;
@@ -226,9 +225,9 @@
             // 
             this.groupBox3.Controls.Add(this.btnVenda);
             this.groupBox3.Location = new System.Drawing.Point(560, 239);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(429, 183);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
@@ -238,7 +237,7 @@
             // 
             this.btnVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenda.Location = new System.Drawing.Point(116, 34);
-            this.btnVenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVenda.Margin = new System.Windows.Forms.Padding(4);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(195, 119);
             this.btnVenda.TabIndex = 8;
@@ -261,7 +260,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
             this.Text = "CDP Bookstore Intranet";
             this.Load += new System.EventHandler(this.Consulta_Load);

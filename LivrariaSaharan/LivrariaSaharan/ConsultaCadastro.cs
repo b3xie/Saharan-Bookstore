@@ -16,5 +16,11 @@ namespace LivrariaSaharan
         {
             InitializeComponent();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Principal form = new Principal();
+            form.Show();
+        }
     }
 }

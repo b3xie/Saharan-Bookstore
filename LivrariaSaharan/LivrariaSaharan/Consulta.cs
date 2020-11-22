@@ -81,5 +81,16 @@ namespace LivrariaSaharan
                 MessageBox.Show("Não temos este produto");
             }
         }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Principal form = new Principal();
+            form.Show();
+        }
     }
 }

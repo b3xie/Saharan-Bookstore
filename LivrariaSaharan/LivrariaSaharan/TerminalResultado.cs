@@ -58,5 +58,26 @@ namespace LivrariaSaharan
             Terminal form = new Terminal();
             form.Show();
         }
+
+        private void txtPreco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TerminalResultado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Principal form = new Principal();
+            form.Show();
+        }
     }
 }

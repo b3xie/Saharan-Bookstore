@@ -226,5 +226,11 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Principal form = new Principal();
+            form.Show();
+        }
     }
 }

@@ -26,5 +26,16 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void richTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Principal form = new Principal();
+            form.Show();
+        }
     }
 }
