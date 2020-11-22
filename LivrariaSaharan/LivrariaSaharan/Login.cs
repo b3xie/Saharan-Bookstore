@@ -13,8 +13,10 @@ namespace LivrariaSaharan
 {
     public partial class Login : Form
     {
-        SQLconexao con;
+        ConexaoBD conne;
+        
         DataTable dt;
+        SqlConnection conn = ConexaoBD.obterConexao();
 
         public Login()
         {
@@ -39,13 +41,13 @@ namespace LivrariaSaharan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            con = new SQLconexao();
+            conne = new ConexaoBD();
             dt = new DataTable();
 
             String usu = textBox1.Text;
             String senha = textBox2.Text;
 
-            dt = con.executarSQL("SELECT CPF,senhaLogin FROM tblFuncionario WHERE CPF = '" + usu + "' AND senhaLogin = '" + senha + "'");
+            dt = conne.executarSQL("SELECT CPF,senhaLogin FROM tblFuncionario WHERE CPF = '" + usu + "' AND senhaLogin = '" + senha + "'");
             try
             {
                 if (dt.Rows.Count > 0)

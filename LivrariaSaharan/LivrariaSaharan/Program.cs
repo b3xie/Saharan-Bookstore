@@ -16,7 +16,7 @@ namespace LivrariaSaharan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Consulta());
+            Application.Run(new Login());
         }
     }
 }

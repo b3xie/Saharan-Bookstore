@@ -69,5 +69,15 @@ namespace LivrariaSaharan.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap design_space_paper_textured_background_53876_42312 {
+            get {
+                object obj = ResourceManager.GetObject("design-space-paper-textured-background_53876-42312", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

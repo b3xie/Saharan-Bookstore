@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,18 @@ namespace LivrariaSaharan
 {
     public partial class Terminal : Form
     {
+        SQLconexao con;
+        DataTable dt;
+        SqlDataReader dr;
+        SqlConnection conn = ConexaoBD.obterConexao();
+        ConexaoBD conne;
+
         public Terminal()
         {
             InitializeComponent();
         }
 
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -85,13 +93,8 @@ namespace LivrariaSaharan
         {
             String valor = TextoISBN.Text;
             
-            if(valor == "") 
-            {
+            TextoISBN.Text = valor + 0;
             
-            } else
-            {
-                TextoISBN.Text = valor + 0;
-            }
             
         }
 
@@ -112,16 +115,110 @@ namespace LivrariaSaharan
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
+            conne = new ConexaoBD();
+            con = new SQLconexao();
+            dt = new DataTable();
             String testando = TextoISBN.Text;
-            if (testando.Length == 13)
-            {
-                TerminalResultado form = new TerminalResultado();
-                form.Show();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tblEstoque WHERE CodigoBarras='" + testando + "'", conn);
+            TerminalResultado form = new TerminalResultado();
 
-            }
-            else 
+            dt = conne.executarSQL("SELECT CodigoBarras FROM tblEstoque WHERE CodigoBarras = '" + testando + "'");
+
+            if (testando.Length == 12)
             {
-                MessageBox.Show("Seu ISBN está errado!");
+                try 
+                { 
+                    if (dt.Rows.Count > 0)
+                    {
+
+                        dt = conne.executarSQL("SELECT * FROM tblLivros WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
+                        if (dt.Rows.Count > 0)
+                        {
+                            SqlCommand prod = new SqlCommand("SELECT * FROM tblLivros WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                            using (SqlDataReader read = prod.ExecuteReader())
+                            {
+                                while (read.Read())
+                                {
+
+                                    form.titulo = read[2].ToString();
+                                    form.autEst = "Autor";
+                                    form.resultAut = read[3].ToString(); ;
+                                    form.lblISxB = "ISBN";
+                                    form.resultIS = read[0].ToString();
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            dt = conne.executarSQL("SELECT * FROM tblFilmes WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
+                            if (dt.Rows.Count > 0)
+                            {
+                                SqlCommand prod = new SqlCommand("SELECT * FROM tblFilmes WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                                using (SqlDataReader read = prod.ExecuteReader())
+                                {
+                                    while (read.Read())
+                                    {
+                                        form.titulo = read[2].ToString();
+                                        form.autEst = "Estudio";
+                                        form.resultAut = read[3].ToString(); ;
+                                        form.lblISxB = "ISAN";
+                                        form.resultIS = read[0].ToString();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                dt = conne.executarSQL("SELECT * FROM tblJogos WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
+                                if (dt.Rows.Count > 0)
+                                {
+                                    SqlCommand prod = new SqlCommand("SELECT * FROM tblJogos WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                                    using (SqlDataReader read = prod.ExecuteReader())
+                                    {
+                                        while (read.Read())
+                                        {
+                                            form.titulo = read[2].ToString();
+                                            form.autEst = "Estudio";
+                                            form.resultAut = read[3].ToString(); ;
+                                            form.lblISxB = "ISAN";
+                                            form.resultIS = read[0].ToString();
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    dt = conne.executarSQL("SELECT * FROM tblMusicas WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
+                                    if (dt.Rows.Count > 0)
+                                    {
+                                        SqlCommand prod = new SqlCommand("SELECT tblMusicas.*,tblAutor.Nome,tblEstoque.Preco FROM tblMusicas INNER JOIN tblAlbum ON tblAlbum.idAlbum = tblMusicas.Album INNER JOIN tblAutor ON tblAutor.idAutor = tblAlbum.Autor INNER JOIN tblEstoque ON tblEstoque.idEstoque = tblMusicas.idEstoque WHERE tblEstoque.CodigoBarras = '"+ testando +"'", conn);
+                                        using (SqlDataReader read = prod.ExecuteReader())
+                                        {
+                                            while (read.Read())
+                                            {
+                                                form.titulo = read[2].ToString();
+                                                form.autEst = "Autor";
+                                                form.resultAut = read[4].ToString(); ;
+                                                form.lblISxB = "ISMN";
+                                                form.resultIS = read[0].ToString();
+                                                form.preco = read[5].ToString();
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Problema no BD");
+                }
+                form.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nenhum produto encontrado");
             }
         }
 

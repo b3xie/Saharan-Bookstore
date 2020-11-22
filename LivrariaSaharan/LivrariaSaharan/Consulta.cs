@@ -14,6 +14,7 @@ namespace LivrariaSaharan
     {
         SQLconexao con;
         DataTable dt;
+        ConexaoBD conne;
 
         public Consulta()
         {
@@ -28,12 +29,13 @@ namespace LivrariaSaharan
         private void txtPesq_Click(object sender, EventArgs e)
         {
             con = new SQLconexao();
+            conne = new ConexaoBD();
             dt = new DataTable();
 
             String nome = txtNome.Text;
             String cod = txtCod.Text;
 
-            dt = con.executarSQL("SELECT * FROM tblLivros WHERE  Titulo = '" + nome + "' OR ISBN = '" + cod + "'");
+            dt = conne.executarSQL("SELECT * FROM tblLivros WHERE Titulo LIKE '%" + nome + "%' OR ISBN = '" + cod + "'");
 
             try 
             {
@@ -45,7 +47,7 @@ namespace LivrariaSaharan
                 }
                 else
                 {
-                    dt = con.executarSQL("SELECT * FROM tblJogos WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                    dt = conne.executarSQL("SELECT * FROM tblJogos WHERE Titulo LIKE '%" + nome + "%' OR ISAN = '" + cod + "'");
                     if (dt.Rows.Count > 0)
                     {
                         BindingSource bs = new BindingSource();
@@ -54,7 +56,7 @@ namespace LivrariaSaharan
                     }
                     else
                     {
-                        dt = con.executarSQL("SELECT * FROM tblMusicas WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                        dt = conne.executarSQL("SELECT * FROM tblMusicas WHERE Titulo LIKE '%" + nome + "%' OR ISAN = '" + cod + "'");
                         if (dt.Rows.Count > 0)
                         {
                             BindingSource bs = new BindingSource();
@@ -63,7 +65,7 @@ namespace LivrariaSaharan
                         }
                         else
                         {
-                            dt = con.executarSQL("SELECT * FROM tblFilmes WHERE  = Titulo '" + nome + "' OR ISAN = '" + cod + "'");
+                            dt = conne.executarSQL("SELECT * FROM tblFilmes WHERE Titulo LIKE '%" + nome + "%' OR ISAN = '" + cod + "'");
                             if (dt.Rows.Count > 0)
                             {
                                 BindingSource bs = new BindingSource();

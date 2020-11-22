@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro.Designer.cs">
-      <DependentUpon>Cadastro.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +64,20 @@
     <Compile Include="CadastroLivro.Designer.cs">
       <DependentUpon>CadastroLivro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteDAO.cs" />
+    <Compile Include="ConexaoBD.cs" />
     <Compile Include="Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consulta.Designer.cs">
       <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCadastro.Designer.cs">
+      <DependentUpon>ConsultaCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="SQLconexao.cs" />
     <Compile Include="Terminal.cs">
@@ -109,9 +112,6 @@
     <Compile Include="Venda.Designer.cs">
       <DependentUpon>Venda.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cadastro.resx">
-      <DependentUpon>Cadastro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastroFuncionario.resx">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCadastro.resx">
+      <DependentUpon>ConsultaCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -161,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CDP LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design-space-paper-textured-background_53876-42312.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LivrariaSaharan
 {
-    public partial class Cadastro : Form
+    public partial class ConsultaCadastro : Form
     {
-        public Cadastro()
+        public ConsultaCadastro()
         {
             InitializeComponent();
         }
