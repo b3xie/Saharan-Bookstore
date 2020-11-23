@@ -92,5 +92,10 @@ namespace LivrariaSaharan
             Principal form = new Principal();
             form.Show();
         }
+
+        private void txtCod_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
