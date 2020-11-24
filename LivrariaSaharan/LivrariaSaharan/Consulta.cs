@@ -127,7 +127,10 @@ namespace LivrariaSaharan
 
         }
 <<<<<<< HEAD
->>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
+>>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
 =======
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
     }

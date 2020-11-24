@@ -80,7 +80,7 @@
             // 
             this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar1.BackColor = System.Drawing.Color.Black;
-            this.monthCalendar1.Location = new System.Drawing.Point(818, 136);
+            this.monthCalendar1.Location = new System.Drawing.Point(818, 181);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowWeekNumbers = true;
             this.monthCalendar1.TabIndex = 4;
@@ -120,7 +120,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(19, 175);
+            this.label3.Location = new System.Drawing.Point(25, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(232, 38);
             this.label3.TabIndex = 6;
@@ -143,7 +143,7 @@
             this.btnCadastro.ForeColor = System.Drawing.Color.White;
             this.btnCadastro.Image = global::LivrariaSaharan.Properties.Resources.baseline_create_white_18dp;
             this.btnCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastro.Location = new System.Drawing.Point(26, 233);
+            this.btnCadastro.Location = new System.Drawing.Point(32, 180);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Padding = new System.Windows.Forms.Padding(10);
             this.btnCadastro.Size = new System.Drawing.Size(228, 117);
@@ -160,7 +160,7 @@
             this.btnConsulta.ForeColor = System.Drawing.Color.White;
             this.btnConsulta.Image = global::LivrariaSaharan.Properties.Resources.baseline_find_in_page_white_18dp1;
             this.btnConsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsulta.Location = new System.Drawing.Point(265, 234);
+            this.btnConsulta.Location = new System.Drawing.Point(271, 181);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Padding = new System.Windows.Forms.Padding(10);
             this.btnConsulta.Size = new System.Drawing.Size(228, 116);
@@ -177,7 +177,7 @@
             this.btnVenda.ForeColor = System.Drawing.Color.White;
             this.btnVenda.Image = global::LivrariaSaharan.Properties.Resources.baseline_storefront_white_18dp;
             this.btnVenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVenda.Location = new System.Drawing.Point(499, 233);
+            this.btnVenda.Location = new System.Drawing.Point(505, 180);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Padding = new System.Windows.Forms.Padding(10);
             this.btnVenda.Size = new System.Drawing.Size(228, 117);
@@ -194,7 +194,7 @@
             this.btnTerminal.ForeColor = System.Drawing.Color.White;
             this.btnTerminal.Image = global::LivrariaSaharan.Properties.Resources.baseline_dvr_white_18dp;
             this.btnTerminal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTerminal.Location = new System.Drawing.Point(499, 366);
+            this.btnTerminal.Location = new System.Drawing.Point(505, 313);
             this.btnTerminal.Name = "btnTerminal";
             this.btnTerminal.Padding = new System.Windows.Forms.Padding(10);
             this.btnTerminal.Size = new System.Drawing.Size(228, 117);
@@ -211,7 +211,7 @@
             this.btnFuncionario.ForeColor = System.Drawing.Color.White;
             this.btnFuncionario.Image = global::LivrariaSaharan.Properties.Resources.baseline_supervisor_account_white_18dp;
             this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionario.Location = new System.Drawing.Point(26, 366);
+            this.btnFuncionario.Location = new System.Drawing.Point(32, 313);
             this.btnFuncionario.Name = "btnFuncionario";
             this.btnFuncionario.Padding = new System.Windows.Forms.Padding(10);
             this.btnFuncionario.Size = new System.Drawing.Size(228, 117);
@@ -228,7 +228,7 @@
             this.btnConsultaC.ForeColor = System.Drawing.Color.White;
             this.btnConsultaC.Image = global::LivrariaSaharan.Properties.Resources.baseline_person_search_white_18dp;
             this.btnConsultaC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultaC.Location = new System.Drawing.Point(265, 365);
+            this.btnConsultaC.Location = new System.Drawing.Point(271, 312);
             this.btnConsultaC.Name = "btnConsultaC";
             this.btnConsultaC.Padding = new System.Windows.Forms.Padding(10);
             this.btnConsultaC.Size = new System.Drawing.Size(228, 117);
