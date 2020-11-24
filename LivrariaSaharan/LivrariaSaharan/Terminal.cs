@@ -126,26 +126,27 @@ namespace LivrariaSaharan
 
             if (testando.Length == 12)
             {
-                try 
-                { 
+                
                     if (dt.Rows.Count > 0)
                     {
 
                         dt = conne.executarSQL("SELECT * FROM tblLivros WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
                         if (dt.Rows.Count > 0)
                         {
-                            SqlCommand prod = new SqlCommand("SELECT * FROM tblLivros WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                            SqlCommand prod = new SqlCommand("SELECT A.Titulo,A.Autor,A.ISBN,B.Preco FROM tblLivros AS A INNER JOIN tblEstoque AS B ON A.idEstoque = B.idEstoque WHERE CodigoBarras = '" + testando + "'", conn);
                             using (SqlDataReader read = prod.ExecuteReader())
                             {
                                 while (read.Read())
                                 {
 
-                                    form.titulo = read[2].ToString();
+                                    form.titulo = read[0].ToString();
                                     form.autEst = "Autor";
-                                    form.resultAut = read[3].ToString(); ;
+                                    form.resultAut = read[1].ToString(); ;
                                     form.lblISxB = "ISBN";
-                                    form.resultIS = read[0].ToString();
-
+                                    form.resultIS = read[2].ToString();
+                                    form.preco = read[3].ToString();
+                                    form.ShowDialog();
+                                    this.Close();
                                 }
                             }
                         }
@@ -154,16 +155,19 @@ namespace LivrariaSaharan
                             dt = conne.executarSQL("SELECT * FROM tblFilmes WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
                             if (dt.Rows.Count > 0)
                             {
-                                SqlCommand prod = new SqlCommand("SELECT * FROM tblFilmes WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                                SqlCommand prod = new SqlCommand("SELECT A.Titulo,A.Estudio,A.ISAN,B.Preco FROM tblFilmes AS A INNER JOIN tblEstoque AS B ON A.idEstoque = B.idEstoque WHERE CodigoBarras = '" + testando + "'", conn);
                                 using (SqlDataReader read = prod.ExecuteReader())
                                 {
                                     while (read.Read())
                                     {
-                                        form.titulo = read[2].ToString();
+                                        form.titulo = read[0].ToString();
                                         form.autEst = "Estudio";
-                                        form.resultAut = read[3].ToString(); ;
+                                        form.resultAut = read[1].ToString(); ;
                                         form.lblISxB = "ISAN";
-                                        form.resultIS = read[0].ToString();
+                                        form.resultIS = read[2].ToString();
+                                        form.preco = read[3].ToString();
+                                        form.ShowDialog();
+                                        this.Close();
                                     }
                                 }
                             }
@@ -172,16 +176,19 @@ namespace LivrariaSaharan
                                 dt = conne.executarSQL("SELECT * FROM tblJogos WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')");
                                 if (dt.Rows.Count > 0)
                                 {
-                                    SqlCommand prod = new SqlCommand("SELECT * FROM tblJogos WHERE idEstoque IN (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras ='" + testando + "')", conn);
+                                    SqlCommand prod = new SqlCommand("SELECT A.Titulo,A.Estudio,A.ISAN,B.Preco FROM tblJogos AS A INNER JOIN tblEstoque AS B ON A.idEstoque = B.idEstoque WHERE CodigoBarras = '"+ testando +"'", conn);
                                     using (SqlDataReader read = prod.ExecuteReader())
                                     {
                                         while (read.Read())
                                         {
-                                            form.titulo = read[2].ToString();
+                                            form.titulo = read[0].ToString();
                                             form.autEst = "Estudio";
-                                            form.resultAut = read[3].ToString(); ;
+                                            form.resultAut = read[1].ToString(); ;
                                             form.lblISxB = "ISAN";
-                                            form.resultIS = read[0].ToString();
+                                            form.resultIS = read[2].ToString();
+                                            form.preco = read[3].ToString();
+                                            form.ShowDialog();
+                                            Close();
                                         }
                                     }
                                 }
@@ -201,20 +208,23 @@ namespace LivrariaSaharan
                                                 form.lblISxB = "ISMN";
                                                 form.resultIS = read[0].ToString();
                                                 form.preco = read[5].ToString();
+                                                form.ShowDialog();
+                                                this.Close();
                                             }
                                         }
                                     }
+                                    else
+                                    {
+                                        MessageBox.Show("Nenhum produto encontrado");
+                                    }
                                 }
                             }
-                        } 
+                        }
                     }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Problema no BD");
-                }
-                form.ShowDialog();
-                this.Close();
+                    
+                
+                
+                
             }
             else
             {
@@ -231,6 +241,11 @@ namespace LivrariaSaharan
         {
             Principal form = new Principal();
             form.Show();
+        }
+
+        private void TextoISBN_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

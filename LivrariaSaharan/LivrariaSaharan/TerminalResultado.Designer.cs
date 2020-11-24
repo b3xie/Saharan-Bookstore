@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ResultadoTitulo = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,46 +36,39 @@
             this.txtPreco = new System.Windows.Forms.RichTextBox();
             this.lblISxN = new System.Windows.Forms.Label();
             this.ResultadoIS = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(255, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 114);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 164);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(57, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 25);
+            this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "Título";
             // 
             // ResultadoTitulo
             // 
+            this.ResultadoTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ResultadoTitulo.BackColor = System.Drawing.SystemColors.Control;
             this.ResultadoTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoTitulo.Location = new System.Drawing.Point(68, 192);
-            this.ResultadoTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResultadoTitulo.Location = new System.Drawing.Point(57, 165);
             this.ResultadoTitulo.Name = "ResultadoTitulo";
             this.ResultadoTitulo.ReadOnly = true;
             this.ResultadoTitulo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ResultadoTitulo.Size = new System.Drawing.Size(649, 93);
+            this.ResultadoTitulo.Size = new System.Drawing.Size(613, 76);
             this.ResultadoTitulo.TabIndex = 8;
             this.ResultadoTitulo.Text = "";
             // 
@@ -84,10 +76,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 486);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(53, 401);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 25);
+            this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Preço";
             // 
@@ -95,35 +86,37 @@
             // 
             this.lblAutEstud.AutoSize = true;
             this.lblAutEstud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutEstud.Location = new System.Drawing.Point(68, 289);
-            this.lblAutEstud.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAutEstud.Location = new System.Drawing.Point(57, 244);
             this.lblAutEstud.Name = "lblAutEstud";
-            this.lblAutEstud.Size = new System.Drawing.Size(59, 25);
+            this.lblAutEstud.Size = new System.Drawing.Size(48, 20);
             this.lblAutEstud.TabIndex = 10;
             this.lblAutEstud.Text = "Autor";
             // 
             // ResultadoAutor
             // 
+            this.ResultadoAutor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ResultadoAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoAutor.Location = new System.Drawing.Point(68, 318);
-            this.ResultadoAutor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResultadoAutor.Location = new System.Drawing.Point(57, 267);
             this.ResultadoAutor.Name = "ResultadoAutor";
             this.ResultadoAutor.ReadOnly = true;
             this.ResultadoAutor.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ResultadoAutor.Size = new System.Drawing.Size(649, 58);
+            this.ResultadoAutor.Size = new System.Drawing.Size(613, 48);
             this.ResultadoAutor.TabIndex = 11;
             this.ResultadoAutor.Text = "";
             // 
             // txtPreco
             // 
-            this.txtPreco.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPreco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPreco.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPreco.Location = new System.Drawing.Point(255, 486);
-            this.txtPreco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPreco.ForeColor = System.Drawing.Color.White;
+            this.txtPreco.Location = new System.Drawing.Point(110, 401);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.ReadOnly = true;
             this.txtPreco.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtPreco.Size = new System.Drawing.Size(261, 70);
+            this.txtPreco.Size = new System.Drawing.Size(294, 58);
             this.txtPreco.TabIndex = 12;
             this.txtPreco.Text = "";
             this.txtPreco.TextChanged += new System.EventHandler(this.txtPreco_TextChanged);
@@ -132,37 +125,25 @@
             // 
             this.lblISxN.AutoSize = true;
             this.lblISxN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblISxN.Location = new System.Drawing.Point(68, 380);
-            this.lblISxN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblISxN.Location = new System.Drawing.Point(57, 318);
             this.lblISxN.Name = "lblISxN";
-            this.lblISxN.Size = new System.Drawing.Size(167, 25);
+            this.lblISxN.Size = new System.Drawing.Size(133, 20);
             this.lblISxN.TabIndex = 13;
             this.lblISxN.Text = "ISBN/ISAN/ISMN";
             // 
             // ResultadoIS
             // 
+            this.ResultadoIS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ResultadoIS.BackColor = System.Drawing.SystemColors.Control;
             this.ResultadoIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoIS.Location = new System.Drawing.Point(68, 409);
-            this.ResultadoIS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResultadoIS.Location = new System.Drawing.Point(57, 341);
             this.ResultadoIS.Name = "ResultadoIS";
             this.ResultadoIS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ResultadoIS.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ResultadoIS.Size = new System.Drawing.Size(649, 43);
+            this.ResultadoIS.Size = new System.Drawing.Size(613, 36);
             this.ResultadoIS.TabIndex = 14;
             this.ResultadoIS.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(255, 590);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 95);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Nova Consulta";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
@@ -171,22 +152,90 @@
             this.voltarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(828, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(720, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // voltarToolStripMenuItem
             // 
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.voltarToolStripMenuItem.Text = "Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackColor = System.Drawing.Color.Green;
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(0, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(720, 100);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(616, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 33);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "17:45";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(170, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Consultar preço";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 84);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_find_replace_white_18dp;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(410, 487);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10);
+            this.button1.Size = new System.Drawing.Size(260, 77);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Nova Consulta";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TerminalResultado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 729);
+            this.ClientSize = new System.Drawing.Size(720, 599);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ResultadoIS);
             this.Controls.Add(this.lblISxN);
@@ -196,23 +245,22 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ResultadoTitulo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(736, 638);
             this.Name = "TerminalResultado";
             this.Load += new System.EventHandler(this.TerminalResultado_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox ResultadoTitulo;
         private System.Windows.Forms.Label label2;
@@ -224,5 +272,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem voltarToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

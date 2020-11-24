@@ -37,5 +37,31 @@ namespace LivrariaSaharan
             Principal form = new Principal();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String ses = dateTimePicker1.Value.Date.ToShortDateString();
+            MessageBox.Show(ses);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastroLivro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,9 +81,31 @@ namespace LivrariaSaharan
 
         }
 
-        public void excluir(int id)
+        public void excluir(string id)
         {
-            SqlCommand cmd = new SqlCommand("DELETE FROM cliente WHERE ID=@Id", conn);
+            SqlCommand cmd = new SqlCommand("DELETE FROM tblCliente WHERE idCliente=@Id", conn);
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.CommandType = CommandType.Text;
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                    MessageBox.Show("Registro excluído com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void excluirFunc(string id)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM tblFuncionario WHERE idFuncionario=@Id", conn);
             cmd.Parameters.AddWithValue("@Id", id);
             cmd.CommandType = CommandType.Text;
 

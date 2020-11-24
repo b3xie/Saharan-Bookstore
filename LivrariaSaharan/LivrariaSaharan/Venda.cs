@@ -57,5 +57,10 @@ namespace LivrariaSaharan
             Principal form = new Principal();
             form.Show();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

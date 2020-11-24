@@ -122,6 +122,12 @@ VALUES
 INSERT INTO tblCliente (Nome,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento) VALUES 
 ('João FranSHUsco','(11)989460300','jofrinha1000@gmail.com','00000000000','SP','São Paulo','Freguesia do Ó','28528185','Rua Doutor Telasko Avara,666','Apartamento 666')
 
+INSERT INTO tblCliente (Nome,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento) VALUES
+('Arthures de Souza','(19)828383989','arthurmelim@arthur.com','00000000001','MG','Juíz de Dentro','Whtasapapap','02013002','Rua Pedro Tomé Souza Carlos','AP 41-A')
+
+INSERT INTO tblFuncionario (Nome,Sexo,Expediente,Telefone,email,RG,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento,Salario,senhaLogin)
+VALUES ('JucaGames','Masculino',2,'(21)982371832','pedroa@yahoo.com','234123984','00000000003','RJ','Suco32','Santa Carolina','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234)
+
 INSERT INTO tblEstoque VALUES ('000000000000',GETDATE(),20,1000),
 ('000000000001',GETDATE(),30,15),
 ('000000000002',GETDATE(),20,40),
@@ -156,3 +162,4 @@ SELECT tblMusicas.*,tblAutor.Nome,tblEstoque.Preco FROM tblMusicas INNER JOIN tb
 SELECT * FROM tblFilmes WHERE  Titulo LIKE '%Edson% 4: %Sem% %tempo% %irmão%' OR ISAN = '00000000000'
 
 SELECT * FROM tblJogos WHERE Titulo LIKE '%P%' OR ISAN = '111'
+
