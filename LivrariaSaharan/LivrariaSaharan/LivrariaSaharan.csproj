@@ -228,8 +228,5 @@
   <ItemGroup>
     <None Include="Resources\baseline_person_search_black_18dp.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_add_white_18dp.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
