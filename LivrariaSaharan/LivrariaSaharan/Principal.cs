@@ -105,5 +105,10 @@ namespace LivrariaSaharan
             CadastroFuncionario form = new CadastroFuncionario();
             form.Show();
         }
+
+        private void principalLogoff_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
