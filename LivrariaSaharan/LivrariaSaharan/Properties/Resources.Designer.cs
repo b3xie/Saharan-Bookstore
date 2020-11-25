@@ -93,6 +93,26 @@ namespace LivrariaSaharan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_create_white_18dp1 {
+            get {
+                object obj = ResourceManager.GetObject("baseline_create_white_18dp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_delete_forever_white_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_delete_forever_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_dvr_white_18dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_dvr_white_18dp", resourceCulture);
@@ -216,6 +236,16 @@ namespace LivrariaSaharan.Properties {
         internal static System.Drawing.Bitmap baseline_receipt_long_white_18dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_receipt_long_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_search_white_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_search_white_18dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
