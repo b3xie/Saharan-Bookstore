@@ -100,6 +100,7 @@ namespace LivrariaSaharan
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -119,10 +120,15 @@ namespace LivrariaSaharan
             }
         }
 =======
+=======
+>>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
         private void txtCod_TextChanged(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
+>>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
+=======
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
     }
 }
