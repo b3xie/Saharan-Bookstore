@@ -40,7 +40,7 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String ses = dateData.Value.Date.ToShortDateString();
+            String ses = dateTimePicker1.Value.Date.ToShortDateString();
             MessageBox.Show(ses);
         }
 
