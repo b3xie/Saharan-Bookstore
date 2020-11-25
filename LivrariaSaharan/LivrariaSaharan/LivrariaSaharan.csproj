@@ -168,7 +168,6 @@
   <ItemGroup>
     <None Include="Resources\design-space-paper-textured-background_53876-42312.jpg" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\baseline_find_in_page_white_18dp.png" />
   </ItemGroup>
@@ -232,7 +231,5 @@
   <ItemGroup>
     <None Include="Resources\baseline_add_white_18dp.png" />
   </ItemGroup>
-=======
->>>>>>> parent of a7918a9... design
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

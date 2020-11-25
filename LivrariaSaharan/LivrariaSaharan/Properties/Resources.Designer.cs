@@ -63,7 +63,6 @@ namespace LivrariaSaharan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap baseline_add_white_18dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_add_white_18dp", resourceCulture);
@@ -274,8 +273,6 @@ namespace LivrariaSaharan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-=======
->>>>>>> parent of a7918a9... design
         internal static System.Drawing.Bitmap CDP_LOGO {
             get {
                 object obj = ResourceManager.GetObject("CDP LOGO", resourceCulture);
