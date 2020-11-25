@@ -62,41 +62,6 @@
             this.txtNome.Text = "";
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
-<<<<<<< HEAD
-=======
-            // txtCod
-            // 
-            this.txtCod.Location = new System.Drawing.Point(184, 151);
-            this.txtCod.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCod.Name = "txtCod";
-            this.txtCod.Size = new System.Drawing.Size(761, 45);
-            this.txtCod.TabIndex = 4;
-            this.txtCod.Text = "";
-            this.txtCod.TextChanged += new System.EventHandler(this.txtCod_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 113);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 29);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Nome";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 166);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 29);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "ISBN/ISAN";
-            // 
->>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -166,6 +131,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Adicionar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
