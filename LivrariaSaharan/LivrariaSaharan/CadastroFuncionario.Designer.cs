@@ -62,16 +62,20 @@
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEx = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnEx = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.richTextBox13 = new System.Windows.Forms.RichTextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -446,6 +450,24 @@
             this.sairToolStripMenuItem.Text = "Voltar";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // btnEx
+            // 
+            this.btnEx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEx.BackColor = System.Drawing.Color.Firebrick;
+            this.btnEx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEx.ForeColor = System.Drawing.Color.White;
+            this.btnEx.Image = global::LivrariaSaharan.Properties.Resources.baseline_delete_forever_white_18dp;
+            this.btnEx.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEx.Location = new System.Drawing.Point(455, 565);
+            this.btnEx.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEx.Name = "btnEx";
+            this.btnEx.Padding = new System.Windows.Forms.Padding(5);
+            this.btnEx.Size = new System.Drawing.Size(111, 72);
+            this.btnEx.TabIndex = 42;
+            this.btnEx.Text = "Excluir";
+            this.btnEx.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEx.UseVisualStyleBackColor = false;
+            // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -471,7 +493,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::LivrariaSaharan.Properties.Resources.baseline_autorenew_white_18dp;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(571, 467);
+            this.button2.Location = new System.Drawing.Point(571, 565);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(10);
             this.button2.Size = new System.Drawing.Size(174, 72);
@@ -499,7 +521,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_group_add_white_18dp1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(751, 467);
+            this.button1.Location = new System.Drawing.Point(751, 565);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10);
             this.button1.Size = new System.Drawing.Size(206, 72);
@@ -509,28 +531,45 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnEx
+            // groupBox4
             // 
-            this.btnEx.BackColor = System.Drawing.Color.Firebrick;
-            this.btnEx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEx.ForeColor = System.Drawing.Color.White;
-            this.btnEx.Image = global::LivrariaSaharan.Properties.Resources.baseline_delete_forever_white_18dp;
-            this.btnEx.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEx.Location = new System.Drawing.Point(455, 467);
-            this.btnEx.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEx.Name = "btnEx";
-            this.btnEx.Padding = new System.Windows.Forms.Padding(5);
-            this.btnEx.Size = new System.Drawing.Size(111, 72);
-            this.btnEx.TabIndex = 42;
-            this.btnEx.Text = "Excluir";
-            this.btnEx.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEx.UseVisualStyleBackColor = false;
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.richTextBox13);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Location = new System.Drawing.Point(412, 467);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(537, 72);
+            this.groupBox4.TabIndex = 36;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Senha";
+            // 
+            // richTextBox13
+            // 
+            this.richTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox13.Location = new System.Drawing.Point(132, 23);
+            this.richTextBox13.Name = "richTextBox13";
+            this.richTextBox13.Size = new System.Drawing.Size(355, 34);
+            this.richTextBox13.TabIndex = 34;
+            this.richTextBox13.Text = "";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(47, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(79, 16);
+            this.label16.TabIndex = 35;
+            this.label16.Text = "Senha login";
             // 
             // CadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 566);
+            this.ClientSize = new System.Drawing.Size(992, 664);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnEx);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
@@ -541,7 +580,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.MinimumSize = new System.Drawing.Size(1008, 605);
+            this.MinimumSize = new System.Drawing.Size(1008, 703);
             this.Name = "CadastroFuncionario";
             this.Text = "CadastroFuncionario";
             this.Load += new System.EventHandler(this.CadastroFuncionario_Load);
@@ -554,6 +593,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,5 +641,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Button btnEx;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RichTextBox richTextBox13;
+        private System.Windows.Forms.Label label16;
     }
 }
