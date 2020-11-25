@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(204, 302);
+            this.panel1.Location = new System.Drawing.Point(175, 262);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 280);
             this.panel1.TabIndex = 1;
@@ -220,7 +220,7 @@
             // TextoISBN
             // 
             this.TextoISBN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextoISBN.Location = new System.Drawing.Point(116, 224);
+            this.TextoISBN.Location = new System.Drawing.Point(87, 184);
             this.TextoISBN.Name = "TextoISBN";
             this.TextoISBN.Size = new System.Drawing.Size(425, 72);
             this.TextoISBN.TabIndex = 3;
@@ -230,9 +230,9 @@
             // texto2
             // 
             this.texto2.AutoSize = true;
-            this.texto2.BackColor = System.Drawing.Color.LimeGreen;
+            this.texto2.BackColor = System.Drawing.Color.Transparent;
             this.texto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texto2.Location = new System.Drawing.Point(112, 201);
+            this.texto2.Location = new System.Drawing.Point(83, 161);
             this.texto2.Name = "texto2";
             this.texto2.Size = new System.Drawing.Size(185, 20);
             this.texto2.TabIndex = 4;
@@ -241,21 +241,23 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.menuStrip1.BackColor = System.Drawing.Color.Green;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 29);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // voltarToolStripMenuItem
             // 
+            this.voltarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voltarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(65, 25);
             this.voltarToolStripMenuItem.Text = "Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
@@ -300,7 +302,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.groupBox2.BackColor = System.Drawing.Color.Green;
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
