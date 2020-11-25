@@ -45,8 +45,8 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e) //btnAdd
         {
-            String ses = dateTimePicker1.Value.Date.ToShortDateString();
-            MessageBox.Show(ses);
+            conne = new ConexaoBD();
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -61,7 +61,27 @@ namespace LivrariaSaharan
 
         private void CadastroLivro_Load(object sender, EventArgs e)
         {
-            
+            pnLivro.Visible = true;
+            pnJogo.Visible = false;
+            pnMusica.Visible = false;
+            pnFilme.Visible = false;
+
+            conne = new ConexaoBD();
+            dt = new DataTable();
+
+            dt = conne.executarSQL("SELECT Genero FROM tblGenero");
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cbGeneroFilme.Items.Add(dt.Rows[i]["Genero"]);
+                cbGeneroJogo.Items.Add(dt.Rows[i]["Genero"]);
+                cbGeneroLivro.Items.Add(dt.Rows[i]["Genero"]);
+            }
+
+            dt = conne.executarSQL("SELECT Genero FROM tblGeneroMusic");
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cbGeneroMusica.Items.Add(dt.Rows[i]["Genero"]);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -72,6 +92,37 @@ namespace LivrariaSaharan
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbTipo.SelectedItem.ToString() == "Livro")
+            {
+                pnLivro.Visible = true;
+                pnJogo.Visible = false;
+                pnMusica.Visible = false;
+                pnFilme.Visible = false;
+            }if (cbTipo.SelectedItem.ToString() == "Jogo")
+            {
+                pnLivro.Visible = false;
+                pnJogo.Visible = true;
+                pnMusica.Visible = false;
+                pnFilme.Visible = false;
+            }
+            if (cbTipo.SelectedItem.ToString() == "Filme")
+            {
+                pnLivro.Visible = false;
+                pnJogo.Visible = false;
+                pnMusica.Visible = false;
+                pnFilme.Visible = true;
+            }
+            if (cbTipo.SelectedItem.ToString() == "Música")
+            {
+                pnLivro.Visible = false;
+                pnJogo.Visible = false;
+                pnMusica.Visible = true;
+                pnFilme.Visible = false;
+            }
         }
     }
 }

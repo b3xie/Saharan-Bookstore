@@ -126,7 +126,9 @@ namespace LivrariaSaharan
 
          private void button2_Click(object sender, EventArgs e)
         {
-
+            CadastroLivro nuevo = new CadastroLivro();
+            nuevo.Show();
+            this.Close();
         }
 
     }

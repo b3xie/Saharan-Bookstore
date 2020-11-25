@@ -246,5 +246,59 @@
   <ItemGroup>
     <None Include="Resources\baseline_create_white_18dp1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdp ussr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdp jp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdp dprk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdp argetina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapChart_Map%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presidente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-05-05 at 13.05.04.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presidente1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribasu.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssss.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-12-06 at 19.17.25.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presidente2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribasu1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssss1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin-icon-18-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lin 2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
