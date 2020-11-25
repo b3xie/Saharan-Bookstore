@@ -75,9 +75,9 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(175, 262);
+            this.panel1.Location = new System.Drawing.Point(197, 263);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 280);
+            this.panel1.Size = new System.Drawing.Size(244, 278);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -86,9 +86,9 @@
             this.buttonVoltar.BackColor = System.Drawing.Color.Maroon;
             this.buttonVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVoltar.ForeColor = System.Drawing.Color.White;
-            this.buttonVoltar.Location = new System.Drawing.Point(4, 211);
+            this.buttonVoltar.Location = new System.Drawing.Point(0, 211);
             this.buttonVoltar.Name = "buttonVoltar";
-            this.buttonVoltar.Size = new System.Drawing.Size(75, 63);
+            this.buttonVoltar.Size = new System.Drawing.Size(79, 63);
             this.buttonVoltar.TabIndex = 11;
             this.buttonVoltar.Text = "↩";
             this.buttonVoltar.UseVisualStyleBackColor = false;
@@ -220,7 +220,7 @@
             // TextoISBN
             // 
             this.TextoISBN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextoISBN.Location = new System.Drawing.Point(87, 184);
+            this.TextoISBN.Location = new System.Drawing.Point(112, 185);
             this.TextoISBN.Name = "TextoISBN";
             this.TextoISBN.Size = new System.Drawing.Size(425, 72);
             this.TextoISBN.TabIndex = 3;
@@ -231,10 +231,10 @@
             // 
             this.texto2.AutoSize = true;
             this.texto2.BackColor = System.Drawing.Color.Transparent;
-            this.texto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texto2.Location = new System.Drawing.Point(83, 161);
+            this.texto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texto2.Location = new System.Drawing.Point(167, 155);
             this.texto2.Name = "texto2";
-            this.texto2.Size = new System.Drawing.Size(185, 20);
+            this.texto2.Size = new System.Drawing.Size(309, 29);
             this.texto2.TabIndex = 4;
             this.texto2.Text = "Digite o código de barras";
             this.texto2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -248,7 +248,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 29);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -308,7 +308,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(0, 24);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(653, 100);
+            this.groupBox2.Size = new System.Drawing.Size(659, 100);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
@@ -326,13 +326,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(192, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 38);
+            this.label1.Size = new System.Drawing.Size(195, 28);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Boa tarde!\r\n";
+            this.label1.Text = "Consulta de preço";
             // 
             // label2
             // 
@@ -340,7 +340,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(549, 21);
+            this.label2.Location = new System.Drawing.Point(555, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 33);
             this.label2.TabIndex = 5;
@@ -350,13 +350,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 594);
+            this.ClientSize = new System.Drawing.Size(659, 591);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.texto2);
             this.Controls.Add(this.TextoISBN);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(675, 630);
+            this.MinimumSize = new System.Drawing.Size(675, 630);
             this.Name = "Terminal";
             this.Text = "Terminal";
             this.panel1.ResumeLayout(false);
