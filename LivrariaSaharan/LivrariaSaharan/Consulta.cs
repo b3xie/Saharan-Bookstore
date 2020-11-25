@@ -126,6 +126,8 @@ namespace LivrariaSaharan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e private void button3_Click(object sender, EventArgs e)
         {
 
@@ -134,7 +136,11 @@ namespace LivrariaSaharan
 =======
 >>>>>>> parent of e48b668... Update Consulta.cs
 =======
->>>>>>> parent of 8ea6dcd... Merge branch 'main' of https://github.com/gabzxth/Saharan-Bookstore into main
+>>>>>>> parent of e48b668... Update Consulta.cs
+=======
+>>>>>>> parent of e48b668... Update Consulta.cs
+=======
+>>>>>>> parent of e48b668... Update Consulta.cs
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
     }
 }
