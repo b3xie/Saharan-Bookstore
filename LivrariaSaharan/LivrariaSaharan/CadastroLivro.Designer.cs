@@ -37,26 +37,66 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnLivro = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbGeneroLivro = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAutorLivro = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTituloLivro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodBarLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.pnFilme = new System.Windows.Forms.Panel();
+            this.cbGeneroFilme = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtEstudioFilme = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtTituloFilme = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtCodBarFilme = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtISANfilme = new System.Windows.Forms.TextBox();
+            this.pnJogo = new System.Windows.Forms.Panel();
+            this.cbGeneroJogo = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtEstudioJogo = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtTituloJogo = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtCodBarJogo = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtISANjogo = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtPublicadora = new System.Windows.Forms.TextBox();
+            this.pnMusica = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cbGeneroMusica = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtTituloMusica = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtCodBarMusica = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtISMN = new System.Windows.Forms.TextBox();
+            this.cbAlbum = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnLivro.SuspendLayout();
+            this.pnFilme.SuspendLayout();
+            this.pnJogo.SuspendLayout();
+            this.pnMusica.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,7 +110,7 @@
             this.funcionariosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(535, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(501, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,20 +185,20 @@
             this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // comboBox1
+            // cbTipo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Items.AddRange(new object[] {
             "Livro",
             "Jogo",
             "Filme",
-            "Música",
-            "Album/Autor/Genero/Genero Musical"});
-            this.comboBox1.Location = new System.Drawing.Point(17, 143);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(128, 24);
-            this.comboBox1.TabIndex = 13;
+            "Música"});
+            this.cbTipo.Location = new System.Drawing.Point(17, 143);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(128, 24);
+            this.cbTipo.TabIndex = 13;
+            this.cbTipo.SelectedIndexChanged += new System.EventHandler(this.cbTipo_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -172,29 +212,30 @@
             // 
             // pnLivro
             // 
-            this.pnLivro.Controls.Add(this.comboBox2);
+            this.pnLivro.Controls.Add(this.pnFilme);
+            this.pnLivro.Controls.Add(this.cbGeneroLivro);
             this.pnLivro.Controls.Add(this.label9);
             this.pnLivro.Controls.Add(this.label8);
-            this.pnLivro.Controls.Add(this.textBox4);
+            this.pnLivro.Controls.Add(this.txtAutorLivro);
             this.pnLivro.Controls.Add(this.label7);
-            this.pnLivro.Controls.Add(this.textBox3);
+            this.pnLivro.Controls.Add(this.txtTituloLivro);
             this.pnLivro.Controls.Add(this.label6);
-            this.pnLivro.Controls.Add(this.textBox2);
+            this.pnLivro.Controls.Add(this.txtCodBarLivro);
             this.pnLivro.Controls.Add(this.label2);
-            this.pnLivro.Controls.Add(this.textBox1);
+            this.pnLivro.Controls.Add(this.txtISBN);
             this.pnLivro.Location = new System.Drawing.Point(8, 175);
             this.pnLivro.Name = "pnLivro";
             this.pnLivro.Size = new System.Drawing.Size(479, 241);
             this.pnLivro.TabIndex = 13;
             // 
-            // comboBox2
+            // cbGeneroLivro
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(9, 203);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(181, 28);
-            this.comboBox2.TabIndex = 10;
+            this.cbGeneroLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGeneroLivro.FormattingEnabled = true;
+            this.cbGeneroLivro.Location = new System.Drawing.Point(9, 203);
+            this.cbGeneroLivro.Name = "cbGeneroLivro";
+            this.cbGeneroLivro.Size = new System.Drawing.Size(181, 28);
+            this.cbGeneroLivro.TabIndex = 10;
             // 
             // label9
             // 
@@ -206,17 +247,6 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Gênero";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(17, 422);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 15;
-            this.btnAdd.Text = "Adicionar";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -227,13 +257,13 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Autor (a)";
             // 
-            // textBox4
+            // txtAutorLivro
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(9, 145);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(452, 27);
-            this.textBox4.TabIndex = 6;
+            this.txtAutorLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutorLivro.Location = new System.Drawing.Point(9, 145);
+            this.txtAutorLivro.Name = "txtAutorLivro";
+            this.txtAutorLivro.Size = new System.Drawing.Size(452, 27);
+            this.txtAutorLivro.TabIndex = 6;
             // 
             // label7
             // 
@@ -245,13 +275,13 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Título";
             // 
-            // textBox3
+            // txtTituloLivro
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(9, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(452, 27);
-            this.textBox3.TabIndex = 4;
+            this.txtTituloLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTituloLivro.Location = new System.Drawing.Point(9, 87);
+            this.txtTituloLivro.Name = "txtTituloLivro";
+            this.txtTituloLivro.Size = new System.Drawing.Size(452, 27);
+            this.txtTituloLivro.TabIndex = 4;
             // 
             // label6
             // 
@@ -264,14 +294,14 @@
             this.label6.Text = "Codigo de Barras";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox2
+            // txtCodBarLivro
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(247, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 27);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtCodBarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarLivro.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarLivro.Name = "txtCodBarLivro";
+            this.txtCodBarLivro.Size = new System.Drawing.Size(214, 27);
+            this.txtCodBarLivro.TabIndex = 2;
+            this.txtCodBarLivro.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -283,14 +313,25 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "ISBN";
             // 
-            // textBox1
+            // txtISBN
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(9, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 27);
-            this.textBox1.TabIndex = 0;
+            this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISBN.Location = new System.Drawing.Point(9, 27);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(216, 27);
+            this.txtISBN.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(17, 493);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 
@@ -311,7 +352,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(98, 422);
+            this.btnUpdate.Location = new System.Drawing.Point(98, 493);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 16;
@@ -319,24 +360,394 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // pnFilme
+            // 
+            this.pnFilme.Controls.Add(this.pnMusica);
+            this.pnFilme.Controls.Add(this.cbGeneroFilme);
+            this.pnFilme.Controls.Add(this.label10);
+            this.pnFilme.Controls.Add(this.label11);
+            this.pnFilme.Controls.Add(this.txtEstudioFilme);
+            this.pnFilme.Controls.Add(this.label12);
+            this.pnFilme.Controls.Add(this.txtTituloFilme);
+            this.pnFilme.Controls.Add(this.label13);
+            this.pnFilme.Controls.Add(this.txtCodBarFilme);
+            this.pnFilme.Controls.Add(this.label14);
+            this.pnFilme.Controls.Add(this.txtISANfilme);
+            this.pnFilme.Location = new System.Drawing.Point(0, 0);
+            this.pnFilme.Name = "pnFilme";
+            this.pnFilme.Size = new System.Drawing.Size(479, 241);
+            this.pnFilme.TabIndex = 14;
+            // 
+            // cbGeneroFilme
+            // 
+            this.cbGeneroFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGeneroFilme.FormattingEnabled = true;
+            this.cbGeneroFilme.Location = new System.Drawing.Point(9, 203);
+            this.cbGeneroFilme.Name = "cbGeneroFilme";
+            this.cbGeneroFilme.Size = new System.Drawing.Size(181, 28);
+            this.cbGeneroFilme.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 183);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Gênero";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 123);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 17);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Estúdio";
+            // 
+            // txtEstudioFilme
+            // 
+            this.txtEstudioFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstudioFilme.Location = new System.Drawing.Point(9, 145);
+            this.txtEstudioFilme.Name = "txtEstudioFilme";
+            this.txtEstudioFilme.Size = new System.Drawing.Size(452, 27);
+            this.txtEstudioFilme.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(9, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 17);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Título";
+            // 
+            // txtTituloFilme
+            // 
+            this.txtTituloFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTituloFilme.Location = new System.Drawing.Point(9, 87);
+            this.txtTituloFilme.Name = "txtTituloFilme";
+            this.txtTituloFilme.Size = new System.Drawing.Size(452, 27);
+            this.txtTituloFilme.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(244, 7);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 17);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Codigo de Barras";
+            // 
+            // txtCodBarFilme
+            // 
+            this.txtCodBarFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarFilme.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarFilme.Name = "txtCodBarFilme";
+            this.txtCodBarFilme.Size = new System.Drawing.Size(214, 27);
+            this.txtCodBarFilme.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(9, 7);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(39, 17);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "ISAN";
+            // 
+            // txtISANfilme
+            // 
+            this.txtISANfilme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISANfilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISANfilme.Location = new System.Drawing.Point(9, 27);
+            this.txtISANfilme.Name = "txtISANfilme";
+            this.txtISANfilme.Size = new System.Drawing.Size(216, 27);
+            this.txtISANfilme.TabIndex = 0;
+            // 
+            // pnJogo
+            // 
+            this.pnJogo.Controls.Add(this.label19);
+            this.pnJogo.Controls.Add(this.label20);
+            this.pnJogo.Controls.Add(this.txtPublicadora);
+            this.pnJogo.Controls.Add(this.cbGeneroJogo);
+            this.pnJogo.Controls.Add(this.label15);
+            this.pnJogo.Controls.Add(this.label16);
+            this.pnJogo.Controls.Add(this.txtEstudioJogo);
+            this.pnJogo.Controls.Add(this.label17);
+            this.pnJogo.Controls.Add(this.txtTituloJogo);
+            this.pnJogo.Controls.Add(this.label18);
+            this.pnJogo.Controls.Add(this.txtCodBarJogo);
+            this.pnJogo.Controls.Add(this.txtISANjogo);
+            this.pnJogo.Location = new System.Drawing.Point(8, 176);
+            this.pnJogo.Name = "pnJogo";
+            this.pnJogo.Size = new System.Drawing.Size(479, 296);
+            this.pnJogo.TabIndex = 17;
+            // 
+            // cbGeneroJogo
+            // 
+            this.cbGeneroJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGeneroJogo.FormattingEnabled = true;
+            this.cbGeneroJogo.Location = new System.Drawing.Point(9, 256);
+            this.cbGeneroJogo.Name = "cbGeneroJogo";
+            this.cbGeneroJogo.Size = new System.Drawing.Size(181, 28);
+            this.cbGeneroJogo.TabIndex = 10;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 236);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 17);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Gênero";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 123);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 17);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Estúdio";
+            // 
+            // txtEstudioJogo
+            // 
+            this.txtEstudioJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstudioJogo.Location = new System.Drawing.Point(9, 145);
+            this.txtEstudioJogo.Name = "txtEstudioJogo";
+            this.txtEstudioJogo.Size = new System.Drawing.Size(452, 27);
+            this.txtEstudioJogo.TabIndex = 6;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(9, 67);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 17);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Título";
+            // 
+            // txtTituloJogo
+            // 
+            this.txtTituloJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTituloJogo.Location = new System.Drawing.Point(9, 87);
+            this.txtTituloJogo.Name = "txtTituloJogo";
+            this.txtTituloJogo.Size = new System.Drawing.Size(452, 27);
+            this.txtTituloJogo.TabIndex = 4;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(244, 7);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(118, 17);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Codigo de Barras";
+            // 
+            // txtCodBarJogo
+            // 
+            this.txtCodBarJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarJogo.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarJogo.Name = "txtCodBarJogo";
+            this.txtCodBarJogo.Size = new System.Drawing.Size(214, 27);
+            this.txtCodBarJogo.TabIndex = 2;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(9, 7);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(39, 17);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "ISAN";
+            // 
+            // txtISANjogo
+            // 
+            this.txtISANjogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISANjogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISANjogo.Location = new System.Drawing.Point(9, 27);
+            this.txtISANjogo.Name = "txtISANjogo";
+            this.txtISANjogo.Size = new System.Drawing.Size(216, 27);
+            this.txtISANjogo.TabIndex = 0;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(6, 181);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(83, 17);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Publicadora";
+            // 
+            // txtPublicadora
+            // 
+            this.txtPublicadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPublicadora.Location = new System.Drawing.Point(9, 203);
+            this.txtPublicadora.Name = "txtPublicadora";
+            this.txtPublicadora.Size = new System.Drawing.Size(452, 27);
+            this.txtPublicadora.TabIndex = 11;
+            // 
+            // pnMusica
+            // 
+            this.pnMusica.Controls.Add(this.cbAlbum);
+            this.pnMusica.Controls.Add(this.label21);
+            this.pnMusica.Controls.Add(this.cbGeneroMusica);
+            this.pnMusica.Controls.Add(this.label22);
+            this.pnMusica.Controls.Add(this.label23);
+            this.pnMusica.Controls.Add(this.textBox2);
+            this.pnMusica.Controls.Add(this.label24);
+            this.pnMusica.Controls.Add(this.txtTituloMusica);
+            this.pnMusica.Controls.Add(this.label25);
+            this.pnMusica.Controls.Add(this.txtCodBarMusica);
+            this.pnMusica.Controls.Add(this.label26);
+            this.pnMusica.Controls.Add(this.txtISMN);
+            this.pnMusica.Location = new System.Drawing.Point(0, 0);
+            this.pnMusica.Name = "pnMusica";
+            this.pnMusica.Size = new System.Drawing.Size(479, 296);
+            this.pnMusica.TabIndex = 18;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 181);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(47, 17);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Album";
+            // 
+            // cbGeneroMusica
+            // 
+            this.cbGeneroMusica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGeneroMusica.FormattingEnabled = true;
+            this.cbGeneroMusica.Location = new System.Drawing.Point(9, 256);
+            this.cbGeneroMusica.Name = "cbGeneroMusica";
+            this.cbGeneroMusica.Size = new System.Drawing.Size(181, 28);
+            this.cbGeneroMusica.TabIndex = 10;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(6, 236);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(56, 17);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Gênero";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(6, 123);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(42, 17);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "Autor";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(9, 145);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(452, 27);
+            this.textBox2.TabIndex = 6;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(9, 67);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 17);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Título";
+            // 
+            // txtTituloMusica
+            // 
+            this.txtTituloMusica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTituloMusica.Location = new System.Drawing.Point(9, 87);
+            this.txtTituloMusica.Name = "txtTituloMusica";
+            this.txtTituloMusica.Size = new System.Drawing.Size(452, 27);
+            this.txtTituloMusica.TabIndex = 4;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(244, 7);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(118, 17);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Codigo de Barras";
+            // 
+            // txtCodBarMusica
+            // 
+            this.txtCodBarMusica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarMusica.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarMusica.Name = "txtCodBarMusica";
+            this.txtCodBarMusica.Size = new System.Drawing.Size(214, 27);
+            this.txtCodBarMusica.TabIndex = 2;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(9, 7);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(41, 17);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "ISMN";
+            // 
+            // txtISMN
+            // 
+            this.txtISMN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISMN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISMN.Location = new System.Drawing.Point(9, 27);
+            this.txtISMN.Name = "txtISMN";
+            this.txtISMN.Size = new System.Drawing.Size(216, 27);
+            this.txtISMN.TabIndex = 0;
+            // 
+            // cbAlbum
+            // 
+            this.cbAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAlbum.FormattingEnabled = true;
+            this.cbAlbum.Location = new System.Drawing.Point(9, 201);
+            this.cbAlbum.Name = "cbAlbum";
+            this.cbAlbum.Size = new System.Drawing.Size(452, 28);
+            this.cbAlbum.TabIndex = 13;
+            // 
             // CadastroLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(535, 589);
+            this.ClientSize = new System.Drawing.Size(501, 589);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pnLivro);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnJogo);
             this.Controls.Add(this.menuStrip1);
             this.Name = "CadastroLivro";
             this.Text = "CadastroLivro";
@@ -346,6 +757,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnLivro.ResumeLayout(false);
             this.pnLivro.PerformLayout();
+            this.pnFilme.ResumeLayout(false);
+            this.pnFilme.PerformLayout();
+            this.pnJogo.ResumeLayout(false);
+            this.pnJogo.PerformLayout();
+            this.pnMusica.ResumeLayout(false);
+            this.pnMusica.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,23 +778,60 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTipo;
         private System.Windows.Forms.Panel pnLivro;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodBarLivro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAutorLivro;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtTituloLivro;
+        private System.Windows.Forms.ComboBox cbGeneroLivro;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Panel pnFilme;
+        private System.Windows.Forms.ComboBox cbGeneroFilme;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtEstudioFilme;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtTituloFilme;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtCodBarFilme;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtISANfilme;
+        private System.Windows.Forms.Panel pnMusica;
+        private System.Windows.Forms.ComboBox cbAlbum;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cbGeneroMusica;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtTituloMusica;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtCodBarMusica;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtISMN;
+        private System.Windows.Forms.Panel pnJogo;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtPublicadora;
+        private System.Windows.Forms.ComboBox cbGeneroJogo;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtEstudioJogo;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtTituloJogo;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtCodBarJogo;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtISANjogo;
     }
 }
