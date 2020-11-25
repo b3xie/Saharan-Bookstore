@@ -34,9 +34,9 @@ namespace LivrariaSaharan
             dt = new DataTable();
 
             String nome = txtNome.Text;
-            String cpf = txtCPF.Text;
+            
 
-            dt = conne.executarSQL("SELECT * FROM tblCliente WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + cpf + "'");
+            dt = conne.executarSQL("SELECT * FROM tblCliente WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + nome + "'");
 
             try
             {
@@ -49,7 +49,7 @@ namespace LivrariaSaharan
                 }
                 else
                 {
-                    dt = conne.executarSQL("SELECT * FROM tblFuncionario WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + cpf + "'");
+                    dt = conne.executarSQL("SELECT * FROM tblFuncionario WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + nome + "'");
                     BindingSource bs = new BindingSource();
                     bs.DataSource = dt;
                     dataGridView1.DataSource = bs;
@@ -65,8 +65,8 @@ namespace LivrariaSaharan
         {
             dt = new DataTable();
             String nome = txtNome.Text;
-            String cpf = txtCPF.Text;
-            dt = conne.executarSQL("SELECT * FROM tblCliente WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + cpf + "'");
+            
+            dt = conne.executarSQL("SELECT * FROM tblCliente WHERE Nome LIKE '%" + nome + "%' OR CPF = '" + nome + "'");
 
 
             ClienteDAO teste = new ClienteDAO();
