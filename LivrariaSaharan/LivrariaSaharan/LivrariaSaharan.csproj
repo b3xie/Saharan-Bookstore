@@ -79,6 +79,12 @@
     <Compile Include="ConsultaCadastro.Designer.cs">
       <DependentUpon>ConsultaCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLconexao.cs" />
     <Compile Include="Terminal.cs">
       <SubType>Form</SubType>
@@ -140,6 +146,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Terminal.resx">
       <DependentUpon>Terminal.cs</DependentUpon>
     </EmbeddedResource>
