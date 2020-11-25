@@ -100,7 +100,6 @@ namespace LivrariaSaharan
         }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -120,18 +119,19 @@ namespace LivrariaSaharan
             }
         }
 =======
-=======
->>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
         private void txtCod_TextChanged(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e private void button3_Click(object sender, EventArgs e)
         {
 
         }
 =======
+=======
+>>>>>>> parent of e48b668... Update Consulta.cs
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
     }
 }
