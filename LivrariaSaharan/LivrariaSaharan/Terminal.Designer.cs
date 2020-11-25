@@ -58,15 +58,15 @@
 <<<<<<< HEAD
             // texto1
             // 
-            this.texto1.AutoSize = true;
-            this.texto1.BackColor = System.Drawing.Color.LimeGreen;
-            this.texto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texto1.Location = new System.Drawing.Point(146, 135);
-            this.texto1.Name = "texto1";
-            this.texto1.Size = new System.Drawing.Size(364, 55);
-            this.texto1.TabIndex = 0;
-            this.texto1.Text = "Consultar preço";
-            this.texto1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.texto2.AutoSize = true;
+            this.texto2.BackColor = System.Drawing.Color.LimeGreen;
+            this.texto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texto2.Location = new System.Drawing.Point(146, 135);
+            this.texto2.Name = "texto1";
+            this.texto2.Size = new System.Drawing.Size(364, 55);
+            this.texto2.TabIndex = 0;
+            this.texto2.Text = "Consultar preço";
+            this.texto2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
 =======
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
@@ -313,13 +313,13 @@
 <<<<<<< HEAD
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(219, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 93);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(219, 31);
+            this.pictureBox2.Name = "pictureBox1";
+            this.pictureBox2.Size = new System.Drawing.Size(197, 93);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
 =======
 >>>>>>> a7918a9a0052d2cb68df3b03016070f5c3e9106e
@@ -400,7 +400,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 <<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(653, 594);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
 =======
             this.ClientSize = new System.Drawing.Size(613, 594);
             this.Controls.Add(this.groupBox1);
