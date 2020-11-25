@@ -42,7 +42,7 @@
             this.pnLivro = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnLivro.SuspendLayout();
@@ -173,7 +174,6 @@
             // 
             this.pnLivro.Controls.Add(this.comboBox2);
             this.pnLivro.Controls.Add(this.label9);
-            this.pnLivro.Controls.Add(this.button1);
             this.pnLivro.Controls.Add(this.label8);
             this.pnLivro.Controls.Add(this.textBox4);
             this.pnLivro.Controls.Add(this.label7);
@@ -184,7 +184,7 @@
             this.pnLivro.Controls.Add(this.textBox1);
             this.pnLivro.Location = new System.Drawing.Point(8, 175);
             this.pnLivro.Name = "pnLivro";
-            this.pnLivro.Size = new System.Drawing.Size(479, 312);
+            this.pnLivro.Size = new System.Drawing.Size(479, 241);
             this.pnLivro.TabIndex = 13;
             // 
             // comboBox2
@@ -206,16 +206,16 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Gênero";
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(9, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Adicionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(17, 422);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
@@ -308,14 +308,27 @@
             this.textBox6.Size = new System.Drawing.Size(79, 24);
             this.textBox6.TabIndex = 11;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(98, 422);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "Atualizar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // CadastroLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(535, 589);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pnLivro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox1);
@@ -350,7 +363,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel pnLivro;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
@@ -365,5 +378,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
