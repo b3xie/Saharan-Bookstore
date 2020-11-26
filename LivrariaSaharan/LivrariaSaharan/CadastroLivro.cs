@@ -184,5 +184,10 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void txtPreco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

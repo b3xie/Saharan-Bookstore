@@ -283,6 +283,7 @@
             this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtISBN.Location = new System.Drawing.Point(9, 27);
+            this.txtISBN.MaxLength = 14;
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(216, 27);
             this.txtISBN.TabIndex = 0;
@@ -532,6 +533,7 @@
             // 
             this.txtQtde.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQtde.Location = new System.Drawing.Point(294, 145);
+            this.txtQtde.MaxLength = 1000;
             this.txtQtde.Name = "txtQtde";
             this.txtQtde.Size = new System.Drawing.Size(92, 24);
             this.txtQtde.TabIndex = 11;
@@ -543,6 +545,7 @@
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(95, 24);
             this.txtPreco.TabIndex = 11;
+            this.txtPreco.TextChanged += new System.EventHandler(this.txtPreco_TextChanged);
             // 
             // pnJogo
             // 

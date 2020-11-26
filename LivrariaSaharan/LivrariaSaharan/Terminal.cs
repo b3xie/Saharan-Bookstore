@@ -247,5 +247,15 @@ namespace LivrariaSaharan
         {
 
         }
+
+        private void Terminal_Load(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToShortTimeString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToShortTimeString();
+        }
     }
 }

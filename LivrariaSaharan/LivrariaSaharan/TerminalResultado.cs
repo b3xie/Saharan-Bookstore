@@ -66,7 +66,7 @@ namespace LivrariaSaharan
 
         private void TerminalResultado_Load(object sender, EventArgs e)
         {
-
+            lblTime.Text = DateTime.Now.ToShortTimeString();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -78,6 +78,11 @@ namespace LivrariaSaharan
         {
             Principal form = new Principal();
             form.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToShortTimeString();
         }
     }
 }

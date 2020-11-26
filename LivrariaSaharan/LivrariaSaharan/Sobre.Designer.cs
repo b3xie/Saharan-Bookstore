@@ -114,11 +114,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(863, 616);
+            this.label6.Location = new System.Drawing.Point(840, 616);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(152, 48);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Felipe Granja\r\n†(1801-1873)";
+            this.label6.Text = "Felipe Granja\r\n†(1811-1917)\r\nMorto na Rev. Russa\r\n";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
@@ -146,22 +146,22 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1037, 616);
+            this.label8.Location = new System.Drawing.Point(1009, 615);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 32);
+            this.label8.Size = new System.Drawing.Size(144, 64);
             this.label8.TabIndex = 21;
-            this.label8.Text = "Felipe Ribas\r\n†(1799-1885)";
+            this.label8.Text = "Felipe Ribas\r\n†(1799-1885)\r\nMorte por overdose\r\nde ópio ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1194, 616);
+            this.label9.Location = new System.Drawing.Point(1184, 615);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 32);
+            this.label9.Size = new System.Drawing.Size(128, 64);
             this.label9.TabIndex = 22;
-            this.label9.Text = "Yuuki Lucas\r\n†(1806-1893)";
+            this.label9.Text = "Yuuki Lucas\r\n†(1826-1920)\r\nMorto pela Gripe \r\nEspanhola";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label10
