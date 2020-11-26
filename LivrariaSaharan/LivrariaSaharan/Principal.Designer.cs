@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnVenda = new System.Windows.Forms.Button();
@@ -43,7 +45,7 @@
             this.btnFuncionario = new System.Windows.Forms.Button();
             this.btnConsultaC = new System.Windows.Forms.Button();
             this.principalLogoff = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +57,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(192, 21);
+            this.label1.Location = new System.Drawing.Point(192, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 38);
             this.label1.TabIndex = 2;
@@ -66,9 +68,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 620);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 618);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1085, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1084, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -81,25 +83,25 @@
             // 
             this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar1.BackColor = System.Drawing.Color.Black;
-            this.monthCalendar1.Location = new System.Drawing.Point(818, 136);
+            this.monthCalendar1.Location = new System.Drawing.Point(817, 136);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowWeekNumbers = true;
             this.monthCalendar1.TabIndex = 4;
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // label2
+            // lblTime
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(981, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 33);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "17:45";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(920, 21);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(146, 33);
+            this.lblTime.TabIndex = 5;
+            this.lblTime.Text = "17:45 PM";
+            this.lblTime.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
             // 
@@ -108,22 +110,12 @@
             this.groupBox1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblTime);
             this.groupBox1.Location = new System.Drawing.Point(0, -3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1085, 100);
+            this.groupBox1.Size = new System.Drawing.Size(1084, 100);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -137,6 +129,33 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Painel principal";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Indigo;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_dvr_white_18dp;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(26, 545);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10);
+            this.button1.Size = new System.Drawing.Size(228, 61);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Sobre Nós";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnCadastro
             // 
             this.btnCadastro.BackColor = System.Drawing.Color.DarkMagenta;
@@ -146,7 +165,7 @@
             this.btnCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastro.Location = new System.Drawing.Point(26, 233);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnCadastro.Padding = new System.Windows.Forms.Padding(10);
             this.btnCadastro.Size = new System.Drawing.Size(228, 117);
             this.btnCadastro.TabIndex = 9;
             this.btnCadastro.Text = "Cadastro de Produtos";
@@ -163,7 +182,7 @@
             this.btnConsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta.Location = new System.Drawing.Point(265, 234);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnConsulta.Padding = new System.Windows.Forms.Padding(10);
             this.btnConsulta.Size = new System.Drawing.Size(228, 116);
             this.btnConsulta.TabIndex = 8;
             this.btnConsulta.Text = "Consulta de Produtos";
@@ -180,7 +199,7 @@
             this.btnVenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenda.Location = new System.Drawing.Point(499, 233);
             this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnVenda.Padding = new System.Windows.Forms.Padding(10);
             this.btnVenda.Size = new System.Drawing.Size(228, 117);
             this.btnVenda.TabIndex = 8;
             this.btnVenda.Text = "Venda";
@@ -197,7 +216,7 @@
             this.btnTerminal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTerminal.Location = new System.Drawing.Point(499, 366);
             this.btnTerminal.Name = "btnTerminal";
-            this.btnTerminal.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnTerminal.Padding = new System.Windows.Forms.Padding(10);
             this.btnTerminal.Size = new System.Drawing.Size(228, 117);
             this.btnTerminal.TabIndex = 8;
             this.btnTerminal.Text = "Terminal";
@@ -214,7 +233,7 @@
             this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFuncionario.Location = new System.Drawing.Point(26, 366);
             this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnFuncionario.Padding = new System.Windows.Forms.Padding(10);
             this.btnFuncionario.Size = new System.Drawing.Size(228, 117);
             this.btnFuncionario.TabIndex = 10;
             this.btnFuncionario.Text = "Funcionário";
@@ -231,7 +250,7 @@
             this.btnConsultaC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultaC.Location = new System.Drawing.Point(265, 365);
             this.btnConsultaC.Name = "btnConsultaC";
-            this.btnConsultaC.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.btnConsultaC.Padding = new System.Windows.Forms.Padding(10);
             this.btnConsultaC.Size = new System.Drawing.Size(228, 117);
             this.btnConsultaC.TabIndex = 11;
             this.btnConsultaC.Text = "Consulta de cadastro";
@@ -247,9 +266,9 @@
             this.principalLogoff.ForeColor = System.Drawing.Color.White;
             this.principalLogoff.Image = global::LivrariaSaharan.Properties.Resources.baseline_exit_to_app_white_18dp;
             this.principalLogoff.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.principalLogoff.Location = new System.Drawing.Point(917, 542);
+            this.principalLogoff.Location = new System.Drawing.Point(916, 540);
             this.principalLogoff.Name = "principalLogoff";
-            this.principalLogoff.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.principalLogoff.Padding = new System.Windows.Forms.Padding(10);
             this.principalLogoff.Size = new System.Drawing.Size(156, 66);
             this.principalLogoff.TabIndex = 6;
             this.principalLogoff.Text = "Sair";
@@ -257,29 +276,17 @@
             this.principalLogoff.UseVisualStyleBackColor = false;
             this.principalLogoff.Click += new System.EventHandler(this.principalLogoff_Click);
             // 
-            // button1
+            // timer1
             // 
-            this.button1.BackColor = System.Drawing.Color.Indigo;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_dvr_white_18dp;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(26, 489);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.button1.Size = new System.Drawing.Size(228, 109);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Sobre Nós";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1085, 642);
+            this.ClientSize = new System.Drawing.Size(1084, 640);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
@@ -313,7 +320,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button principalLogoff;
         private System.Windows.Forms.Button btnConsulta;
         private System.Windows.Forms.Button btnCadastro;
@@ -324,5 +331,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

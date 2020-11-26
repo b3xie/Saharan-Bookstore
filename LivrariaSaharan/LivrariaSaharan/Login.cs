@@ -54,6 +54,8 @@ namespace LivrariaSaharan
                 {
                     Principal form = new Principal();
                     form.Show();
+                    Login form2 = new Login();
+                    form2.Close();
                 }
                 else
                 {

@@ -300,5 +300,26 @@
   <ItemGroup>
     <None Include="Resources\lin 2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_search_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_add_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_create_black_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_delete_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_delete_forever_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_exit_to_app_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_login_white_18dp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
