@@ -12,7 +12,7 @@ namespace LivrariaSaharan
     class ConexaoBD
     {
 
-        private static string connString = @"Data Source=" + Environment.MachineName + ";Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
+        private static string connString = @"Data Source=" + Environment.MachineName + @"\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
 
 
         // representa a conexão com o banco
@@ -80,6 +80,19 @@ namespace LivrariaSaharan
             }
         }
 
+        public void desconectar()
+        {
+            try
+            {
+                if ((conn.State == ConnectionState.Open))
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    conn = null;
+                }
+            }
+            catch (Exception) { }
+        }
 
 
         public DataTable executarSQL(String comando_sql)
@@ -102,7 +115,26 @@ namespace LivrariaSaharan
             }
         }
 
-
+        public bool manutencaoDB(String comando_sql) //incluir, alterar, excluir
+        {
+            try
+            {
+                conectar();
+                SqlCommand comando = new SqlCommand();
+                comando.CommandText = comando_sql;
+                comando.Connection = conn;
+                comando.ExecuteScalar();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                desconectar();
+            }
+        }
 
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace LivrariaSaharan
 {
@@ -61,8 +62,11 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e) //btnAdd
         {
-            String CodBarsLivro = txtCodBarLivro.Text, ISBN = txtISBN.Text, AutorLivro = txtAutorLivro.Text, GeneroLivro = cbGeneroLivro.Text,
-                DataLote = dateTimePicker1.Value.ToShortDateString(), Preco = txtPreco.Text, TituloLivro = txtTituloLivro.Text, Qtde = txtQtde.Text;
+            dt = new DataTable();
+            String CodBarsLivro = txtCodBarLivro.Text, ISBN = txtISBN.Text, AutorLivro = txtAutorLivro.Text, GeneroLivro = cbGeneroLivro.SelectedItem.ToString(),
+                DataLote = dateTimePicker1.Value.ToShortDateString(), TituloLivro = txtTituloLivro.Text;
+            int Qtde = Convert.ToInt32(txtQtde.Text);
+            double Preco = double.Parse(txtPreco.Text);
 
             conne = new ConexaoBD();
             if (cbTipo.SelectedItem == "Livro")
@@ -74,22 +78,24 @@ namespace LivrariaSaharan
                 }
                 else
                 {
-                    SqlCommand insertEstoq = new SqlCommand("INSERT INTO tblEstoque VALUES ('" + CodBarsLivro + "','" + DataLote + "','" + Qtde + "','" + Preco + "')", conn);
 
-                    SqlCommand prod = new SqlCommand("SELECT idEstoque FROM tblEstoque WHERE CodigoBarras = '" + CodBarsLivro + "'", conn);
-                    using (SqlDataReader read = prod.ExecuteReader())
-                    {
-                        while (read.Read())
-                        {
-                            String idLivro = read[0].ToString();
-                            SqlCommand insertProd = new SqlCommand("INSERT INTO tblLivros VALUES ('" + ISBN + "'," + idLivro + ",'" + TituloLivro + "','" + AutorLivro + "','" + GeneroLivro + "')", conn);
-                            insertEstoq.ExecuteScalar();
-                            insertProd.ExecuteScalar();
-                            
-                        }
-                    }
-                    MessageBox.Show("Registro Inserido");
+                    SqlCommand cmd = new SqlCommand("usp_Susus", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@codbar", CodBarsLivro);
+                    cmd.Parameters.AddWithValue("@data", DataLote);
+                    cmd.Parameters.AddWithValue("@qtde", Qtde);
+                    cmd.Parameters.AddWithValue("@preco", Preco);
+                    cmd.Parameters.Add("@retValue", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
+                    cmd.ExecuteNonQuery();
+                    int retval = (int)cmd.Parameters["@retValue"].Value;
+
+                    dt = conne.executarSQL("SELECT idGenero FROM tblGenero WHERE Genero = '" + GeneroLivro + "'");
+                    String genLivro = dt.Rows[0]["idGenero"].ToString();
+
+                    cmd = new SqlCommand("INSERT INTO tblLivros VALUES ('" + ISBN + "'," + retval.ToString() + ",'" + TituloLivro + "','" + AutorLivro + "'," + genLivro + ")",conn);
+                    int i = cmd.ExecuteNonQuery();
+                    if (i> 0) { MessageBox.Show("Registro Inserido"); } else { MessageBox.Show("Erro ao inserir registro"); }
                 }
             }
             else { MessageBox.Show("Selecione um tipo de producto"); }
