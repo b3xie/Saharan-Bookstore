@@ -179,5 +179,10 @@ namespace LivrariaSaharan
                 pnFilme.Visible = false;
             }
         }
+
+        private void funcionariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

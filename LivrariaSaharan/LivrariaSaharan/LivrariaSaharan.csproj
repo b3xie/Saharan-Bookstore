@@ -321,5 +321,11 @@
   <ItemGroup>
     <None Include="Resources\baseline_login_white_18dp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_autorenew_white_18dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_add_white_18dp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
