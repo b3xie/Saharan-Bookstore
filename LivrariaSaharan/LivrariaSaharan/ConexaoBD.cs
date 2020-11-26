@@ -12,7 +12,7 @@ namespace LivrariaSaharan
     class ConexaoBD
     {
 
-        private static string connString = @"Data Source=" + Environment.MachineName + @"\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
+        private static string connString = @"Data Source=" + Environment.MachineName + @";Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
 
 
         // representa a conexão com o banco

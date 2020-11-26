@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,19 +39,21 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.errou = new System.Windows.Forms.Label();
+            this.TextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(43, 244);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox.Location = new System.Drawing.Point(62, 106);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(262, 20);
+            this.textBox.TabIndex = 1;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -59,6 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(43, 290);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '☭';
             this.textBox2.Size = new System.Drawing.Size(262, 20);
             this.textBox2.TabIndex = 2;
             // 
@@ -111,7 +114,7 @@
             // 
             this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSair.Location = new System.Drawing.Point(184, 348);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(2);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(121, 49);
             this.btnSair.TabIndex = 8;
@@ -165,11 +168,36 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Faça seu login.";
             // 
+            // errou
+            // 
+            this.errou.AutoSize = true;
+            this.errou.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errou.ForeColor = System.Drawing.Color.Red;
+            this.errou.Location = new System.Drawing.Point(41, 313);
+            this.errou.Name = "errou";
+            this.errou.Size = new System.Drawing.Size(177, 16);
+            this.errou.TabIndex = 14;
+            this.errou.Text = "CPF ou senha incorretos";
+            this.errou.Visible = false;
+            // 
+            // TextBox1
+            // 
+            this.TextBox1.Location = new System.Drawing.Point(44, 244);
+            this.TextBox1.Mask = "000.000.000-00";
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(262, 20);
+            this.TextBox1.TabIndex = 15;
+            this.TextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
+            this.TextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.TextBox1_MaskInputRejected);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 543);
+            this.Controls.Add(this.TextBox1);
+            this.Controls.Add(this.errou);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSair);
@@ -178,7 +206,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(375, 543);
             this.MinimumSize = new System.Drawing.Size(375, 543);
@@ -194,7 +221,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
@@ -205,6 +232,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label errou;
+        private System.Windows.Forms.MaskedTextBox TextBox1;
     }
 }
 
