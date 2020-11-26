@@ -299,6 +299,7 @@
             // 
             this.txtCodBarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodBarLivro.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarLivro.MaxLength = 12;
             this.txtCodBarLivro.Name = "txtCodBarLivro";
             this.txtCodBarLivro.Size = new System.Drawing.Size(214, 27);
             this.txtCodBarLivro.TabIndex = 2;

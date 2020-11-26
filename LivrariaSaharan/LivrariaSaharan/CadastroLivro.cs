@@ -62,43 +62,45 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e) //btnAdd
         {
-            dt = new DataTable();
-            String CodBarsLivro = txtCodBarLivro.Text, ISBN = txtISBN.Text, AutorLivro = txtAutorLivro.Text, GeneroLivro = cbGeneroLivro.SelectedItem.ToString(),
-                DataLote = dateTimePicker1.Value.ToShortDateString(), TituloLivro = txtTituloLivro.Text;
-            int Qtde = Convert.ToInt32(txtQtde.Text);
-            double Preco = double.Parse(txtPreco.Text);
 
-            conne = new ConexaoBD();
-            if (cbTipo.SelectedItem == "Livro")
-            {
-                if (txtCodBarLivro.Text == "" && txtISBN.Text == "" && txtAutorLivro.Text == "" && cbGeneroLivro.Text == "" && txtPreco.Text == "" && txtQtde.Text == ""
-                    && txtTituloLivro.Text == "")
-                {
-                    MessageBox.Show("Preencha todos os campos");
-                }
-                else
-                {
+                dt = new DataTable();
 
+                conne = new ConexaoBD();
+                if (cbTipo.SelectedItem == "Livro")
+                {
+                    if (txtCodBarLivro.Text == "" && txtISBN.Text == "" && txtAutorLivro.Text == "" && cbGeneroLivro.Text == "" && txtPreco.Text == "" && txtQtde.Text == ""
+                        && txtTituloLivro.Text == "")
+                    {
+                        MessageBox.Show("Preencha todos os campos");
+                    }
+                    else
+                    {
+                        // zap
+                        String CodBarsLivro = txtCodBarLivro.Text, ISBN = txtISBN.Text, AutorLivro = txtAutorLivro.Text, GeneroLivro = cbGeneroLivro.SelectedItem.ToString(),
+                        DataLote = dateTimePicker1.Value.ToShortDateString(), TituloLivro = txtTituloLivro.Text;
+                        int Qtde = Convert.ToInt32(txtQtde.Text);
+                        double Preco = double.Parse(txtPreco.Text);
+                        //zap
                     SqlCommand cmd = new SqlCommand("usp_Susus", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@codbar", CodBarsLivro);
-                    cmd.Parameters.AddWithValue("@data", DataLote);
-                    cmd.Parameters.AddWithValue("@qtde", Qtde);
-                    cmd.Parameters.AddWithValue("@preco", Preco);
-                    cmd.Parameters.Add("@retValue", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
-                    cmd.ExecuteNonQuery();
-                    int retval = (int)cmd.Parameters["@retValue"].Value;
+                        cmd.Parameters.AddWithValue("@codbar", CodBarsLivro);
+                        cmd.Parameters.AddWithValue("@data", DataLote);
+                        cmd.Parameters.AddWithValue("@qtde", Qtde);
+                        cmd.Parameters.AddWithValue("@preco", Preco);
+                        cmd.Parameters.Add("@retValue", System.Data.SqlDbType.Int).Direction = System.Data.ParameterDirection.ReturnValue;
+                        cmd.ExecuteNonQuery();
+                        int retval = (int)cmd.Parameters["@retValue"].Value;
 
-                    dt = conne.executarSQL("SELECT idGenero FROM tblGenero WHERE Genero = '" + GeneroLivro + "'");
-                    String genLivro = dt.Rows[0]["idGenero"].ToString();
+                        dt = conne.executarSQL("SELECT idGenero FROM tblGenero WHERE Genero = '" + GeneroLivro + "'");
+                        String genLivro = dt.Rows[0]["idGenero"].ToString();
 
-                    cmd = new SqlCommand("INSERT INTO tblLivros VALUES ('" + ISBN + "'," + retval.ToString() + ",'" + TituloLivro + "','" + AutorLivro + "'," + genLivro + ")",conn);
-                    int i = cmd.ExecuteNonQuery();
-                    if (i> 0) { MessageBox.Show("Registro Inserido"); } else { MessageBox.Show("Erro ao inserir registro"); }
+                        cmd = new SqlCommand("INSERT INTO tblLivros VALUES ('" + ISBN + "'," + retval.ToString() + ",'" + TituloLivro + "','" + AutorLivro + "'," + genLivro + ")",conn);
+                        int i = cmd.ExecuteNonQuery();
+                        if (i> 0) { MessageBox.Show("Registro Inserido"); } else { MessageBox.Show("Erro ao inserir registro"); }
+                    }
                 }
-            }
-            else { MessageBox.Show("Selecione um tipo de producto"); }
+                else { MessageBox.Show("Selecione um tipo de produto"); }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
