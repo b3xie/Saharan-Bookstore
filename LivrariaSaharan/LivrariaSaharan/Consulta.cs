@@ -128,6 +128,7 @@ namespace LivrariaSaharan
         {
             CadastroLivro nuevo = new CadastroLivro();
             nuevo.Show();
+            nuevo.hideUpdate();
             this.Close();
         }
 

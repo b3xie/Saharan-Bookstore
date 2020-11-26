@@ -20,7 +20,23 @@ namespace LivrariaSaharan
         public CadastroLivro()
         {
             InitializeComponent();
+
+            
+
         }
+
+        public void hideUpdate()
+        {
+            btnUpdate.Visible = false;
+            button1.Visible = true;
+        }
+        public void hideAdd()
+        {
+            button1.Visible = false;
+            btnUpdate.Visible = true;
+        }
+
+
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -45,8 +61,38 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e) //btnAdd
         {
-            conne = new ConexaoBD();
+            String CodBarsLivro = txtCodBarLivro.Text, ISBN = txtISBN.Text, AutorLivro = txtAutorLivro.Text, GeneroLivro = cbGeneroLivro.Text,
+                DataLote = dateTimePicker1.Value.ToShortDateString(), Preco = txtPreco.Text, TituloLivro = txtTituloLivro.Text, Qtde = txtQtde.Text;
 
+            conne = new ConexaoBD();
+            if (cbTipo.SelectedItem == "Livro")
+            {
+                if (txtCodBarLivro.Text == "" && txtISBN.Text == "" && txtAutorLivro.Text == "" && cbGeneroLivro.Text == "" && txtPreco.Text == "" && txtQtde.Text == ""
+                    && txtTituloLivro.Text == "")
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                }
+                else
+                {
+                    SqlCommand insertEstoq = new SqlCommand("INSERT INTO tblEstoque VALUES ('" + CodBarsLivro + "','" + DataLote + "','" + Qtde + "','" + Preco + "')", conn);
+
+                    SqlCommand prod = new SqlCommand("SELECT idEstoque FROM tblEstoque WHERE CodigoBarras = '" + CodBarsLivro + "'", conn);
+                    using (SqlDataReader read = prod.ExecuteReader())
+                    {
+                        while (read.Read())
+                        {
+                            String idLivro = read[0].ToString();
+                            SqlCommand insertProd = new SqlCommand("INSERT INTO tblLivros VALUES ('" + ISBN + "'," + idLivro + ",'" + TituloLivro + "','" + AutorLivro + "','" + GeneroLivro + "')", conn);
+                            insertEstoq.ExecuteScalar();
+                            insertProd.ExecuteScalar();
+                            
+                        }
+                    }
+                    MessageBox.Show("Registro Inserido");
+
+                }
+            }
+            else { MessageBox.Show("Selecione um tipo de producto"); }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -61,6 +107,7 @@ namespace LivrariaSaharan
 
         private void CadastroLivro_Load(object sender, EventArgs e)
         {
+            cbTipo.SelectedItem = "Livro";
             pnLivro.Visible = true;
             pnJogo.Visible = false;
             pnMusica.Visible = false;

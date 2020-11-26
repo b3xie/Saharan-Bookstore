@@ -68,6 +68,7 @@ namespace LivrariaSaharan
         private void button2_Click(object sender, EventArgs e)
         {
             CadastroLivro form = new CadastroLivro();
+            form.hideUpdate();
             form.Show();
         }
 
