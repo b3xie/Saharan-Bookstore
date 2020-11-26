@@ -16,5 +16,15 @@ namespace LivrariaSaharan
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void principalLogoff_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
