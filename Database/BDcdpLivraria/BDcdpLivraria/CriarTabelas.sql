@@ -163,3 +163,5 @@ SELECT * FROM tblFilmes WHERE  Titulo LIKE '%Edson% 4: %Sem% %tempo% %irmão%' OR
 
 SELECT * FROM tblJogos WHERE Titulo LIKE '%P%' OR ISAN = '111'
 
+SELECT * FROM tblExpediente
+
