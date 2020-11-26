@@ -25,9 +25,9 @@ namespace LivrariaSaharan
 
         private void Consulta_Load(object sender, EventArgs e)
         {
-            
-        }
+            lblTime.Text = DateTime.Now.ToShortTimeString();
 
+        }
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -116,6 +116,11 @@ namespace LivrariaSaharan
         {
             Sobre form = new Sobre();
             form.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToShortTimeString();
         }
     }
 }

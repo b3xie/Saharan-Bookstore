@@ -44,7 +44,7 @@ namespace LivrariaSaharan
             conne = new ConexaoBD();
             dt = new DataTable();
 
-            String usu = textBox1.Text;
+            String usu = TextBox1.Text;
             String senha = textBox2.Text;
 
             dt = conne.executarSQL("SELECT CPF,senhaLogin FROM tblFuncionario WHERE CPF = '" + usu + "' AND senhaLogin = '" + senha + "'");
@@ -54,10 +54,13 @@ namespace LivrariaSaharan
                 {
                     Principal form = new Principal();
                     form.Show();
+                    Login form2 = new Login();
+                    form2.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Login negado");//o que vai acontecer se não existir
+                    errou.Visible = true;//o que vai acontecer se não existir
+                    MessageBox.Show(TextBox1.Text);
                 }
             }
             catch (Exception)
@@ -82,6 +85,11 @@ namespace LivrariaSaharan
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void TextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
