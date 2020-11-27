@@ -50,9 +50,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -221,9 +221,15 @@
             // 
             // TextoISBN
             // 
-            this.TextoISBN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoISBN.Font = new System.Drawing.Font("Lucida Console", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoISBN.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
             this.TextoISBN.Location = new System.Drawing.Point(112, 185);
+            this.TextoISBN.Margin = new System.Windows.Forms.Padding(0);
+            this.TextoISBN.MaxLength = 12;
+            this.TextoISBN.Multiline = false;
             this.TextoISBN.Name = "TextoISBN";
+            this.TextoISBN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TextoISBN.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.TextoISBN.Size = new System.Drawing.Size(425, 72);
             this.TextoISBN.TabIndex = 3;
             this.TextoISBN.Text = "";
@@ -314,6 +320,16 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -337,16 +353,6 @@
             this.lblTime.Size = new System.Drawing.Size(146, 33);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "17:45 PM";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 

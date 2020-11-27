@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.errou = new System.Windows.Forms.Label();
             this.TextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -47,10 +47,11 @@
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(43, 290);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(43, 302);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '☭';
-            this.textBox2.Size = new System.Drawing.Size(262, 20);
+            this.textBox2.Size = new System.Drawing.Size(263, 31);
             this.textBox2.TabIndex = 2;
             // 
             // label1
@@ -70,7 +71,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 267);
+            this.label2.Location = new System.Drawing.Point(40, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 6;
@@ -81,7 +82,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 488);
+            this.label3.Location = new System.Drawing.Point(184, 482);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 13);
             this.label3.TabIndex = 7;
@@ -93,11 +94,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(1, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(375, 100);
+            this.groupBox1.Size = new System.Drawing.Size(359, 100);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(85, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -115,7 +126,7 @@
             this.errou.AutoSize = true;
             this.errou.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errou.ForeColor = System.Drawing.Color.Red;
-            this.errou.Location = new System.Drawing.Point(41, 313);
+            this.errou.Location = new System.Drawing.Point(41, 336);
             this.errou.Name = "errou";
             this.errou.Size = new System.Drawing.Size(177, 16);
             this.errou.TabIndex = 14;
@@ -124,23 +135,15 @@
             // 
             // TextBox1
             // 
+            this.TextBox1.BeepOnError = true;
+            this.TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox1.Location = new System.Drawing.Point(44, 244);
             this.TextBox1.Mask = "000.000.000-00";
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(262, 20);
+            this.TextBox1.Size = new System.Drawing.Size(262, 31);
             this.TextBox1.TabIndex = 15;
             this.TextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePrompt;
             this.TextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.TextBox1_MaskInputRejected);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(92, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // btnSair
             // 
@@ -150,7 +153,7 @@
             this.btnSair.ForeColor = System.Drawing.Color.White;
             this.btnSair.Image = global::LivrariaSaharan.Properties.Resources.baseline_exit_to_app_white_18dp1;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSair.Location = new System.Drawing.Point(206, 385);
+            this.btnSair.Location = new System.Drawing.Point(207, 385);
             this.btnSair.Margin = new System.Windows.Forms.Padding(2);
             this.btnSair.Name = "btnSair";
             this.btnSair.Padding = new System.Windows.Forms.Padding(10);
@@ -170,7 +173,7 @@
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Image = global::LivrariaSaharan.Properties.Resources.baseline_login_white_18dp;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(43, 385);
+            this.btnLogin.Location = new System.Drawing.Point(44, 385);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(10);
             this.btnLogin.Size = new System.Drawing.Size(158, 49);
@@ -184,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 543);
+            this.ClientSize = new System.Drawing.Size(359, 504);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.errou);
             this.Controls.Add(this.label4);
@@ -195,7 +198,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(375, 543);
             this.MinimumSize = new System.Drawing.Size(375, 543);
             this.Name = "Login";

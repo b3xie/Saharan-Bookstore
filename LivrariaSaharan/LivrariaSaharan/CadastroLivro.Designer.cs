@@ -86,10 +86,12 @@
             this.txtCodBarJogo = new System.Windows.Forms.TextBox();
             this.txtISANjogo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.pnLivro.SuspendLayout();
             this.pnFilme.SuspendLayout();
@@ -97,6 +99,7 @@
             this.pnJogo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -108,7 +111,7 @@
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(656, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(658, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -123,7 +126,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(389, 129);
+            this.label5.Location = new System.Drawing.Point(297, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 6;
@@ -132,7 +135,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 131);
+            this.label4.Location = new System.Drawing.Point(151, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 4;
@@ -141,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(156, 127);
+            this.label3.Location = new System.Drawing.Point(21, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 3;
@@ -152,7 +155,7 @@
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(159, 143);
+            this.dateTimePicker1.Location = new System.Drawing.Point(24, 219);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(119, 24);
             this.dateTimePicker1.TabIndex = 2;
@@ -168,9 +171,9 @@
             "Jogo",
             "Filme",
             "Música"});
-            this.cbTipo.Location = new System.Drawing.Point(17, 143);
+            this.cbTipo.Location = new System.Drawing.Point(197, 19);
             this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(128, 24);
+            this.cbTipo.Size = new System.Drawing.Size(253, 24);
             this.cbTipo.TabIndex = 13;
             this.cbTipo.SelectedIndexChanged += new System.EventHandler(this.cbTipo_SelectedIndexChanged);
             // 
@@ -186,7 +189,7 @@
             this.pnLivro.Controls.Add(this.txtCodBarLivro);
             this.pnLivro.Controls.Add(this.label2);
             this.pnLivro.Controls.Add(this.txtISBN);
-            this.pnLivro.Location = new System.Drawing.Point(8, 175);
+            this.pnLivro.Location = new System.Drawing.Point(12, 249);
             this.pnLivro.Name = "pnLivro";
             this.pnLivro.Size = new System.Drawing.Size(479, 241);
             this.pnLivro.TabIndex = 13;
@@ -300,7 +303,8 @@
             this.pnFilme.Controls.Add(this.txtCodBarFilme);
             this.pnFilme.Controls.Add(this.label14);
             this.pnFilme.Controls.Add(this.txtISANfilme);
-            this.pnFilme.Location = new System.Drawing.Point(8, 175);
+            this.pnFilme.Controls.Add(this.pnMusica);
+            this.pnFilme.Location = new System.Drawing.Point(12, 249);
             this.pnFilme.Name = "pnFilme";
             this.pnFilme.Size = new System.Drawing.Size(479, 241);
             this.pnFilme.TabIndex = 14;
@@ -375,6 +379,7 @@
             // 
             this.txtCodBarFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodBarFilme.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarFilme.MaxLength = 12;
             this.txtCodBarFilme.Name = "txtCodBarFilme";
             this.txtCodBarFilme.Size = new System.Drawing.Size(214, 27);
             this.txtCodBarFilme.TabIndex = 2;
@@ -412,7 +417,7 @@
             this.pnMusica.Controls.Add(this.txtCodBarMusica);
             this.pnMusica.Controls.Add(this.label26);
             this.pnMusica.Controls.Add(this.txtISMN);
-            this.pnMusica.Location = new System.Drawing.Point(8, 175);
+            this.pnMusica.Location = new System.Drawing.Point(0, 0);
             this.pnMusica.Name = "pnMusica";
             this.pnMusica.Size = new System.Drawing.Size(479, 296);
             this.pnMusica.TabIndex = 18;
@@ -532,18 +537,18 @@
             // txtQtde
             // 
             this.txtQtde.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQtde.Location = new System.Drawing.Point(294, 145);
+            this.txtQtde.Location = new System.Drawing.Point(154, 219);
             this.txtQtde.MaxLength = 1000;
             this.txtQtde.Name = "txtQtde";
-            this.txtQtde.Size = new System.Drawing.Size(92, 24);
+            this.txtQtde.Size = new System.Drawing.Size(140, 24);
             this.txtQtde.TabIndex = 11;
             // 
             // txtPreco
             // 
             this.txtPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPreco.Location = new System.Drawing.Point(392, 145);
+            this.txtPreco.Location = new System.Drawing.Point(300, 219);
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(95, 24);
+            this.txtPreco.Size = new System.Drawing.Size(173, 24);
             this.txtPreco.TabIndex = 11;
             this.txtPreco.TextChanged += new System.EventHandler(this.txtPreco_TextChanged);
             // 
@@ -561,7 +566,7 @@
             this.pnJogo.Controls.Add(this.label18);
             this.pnJogo.Controls.Add(this.txtCodBarJogo);
             this.pnJogo.Controls.Add(this.txtISANjogo);
-            this.pnJogo.Location = new System.Drawing.Point(8, 176);
+            this.pnJogo.Location = new System.Drawing.Point(12, 249);
             this.pnJogo.Name = "pnJogo";
             this.pnJogo.Size = new System.Drawing.Size(479, 296);
             this.pnJogo.TabIndex = 17;
@@ -664,6 +669,7 @@
             // 
             this.txtCodBarJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodBarJogo.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarJogo.MaxLength = 12;
             this.txtCodBarJogo.Name = "txtCodBarJogo";
             this.txtCodBarJogo.Size = new System.Drawing.Size(214, 27);
             this.txtCodBarJogo.TabIndex = 2;
@@ -686,9 +692,19 @@
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Location = new System.Drawing.Point(0, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(656, 100);
+            this.groupBox1.Size = new System.Drawing.Size(658, 100);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // label27
             // 
@@ -702,16 +718,6 @@
             this.label27.TabIndex = 2;
             this.label27.Text = "Cadastro de estoque";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.DarkMagenta;
@@ -719,7 +725,7 @@
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Image = global::LivrariaSaharan.Properties.Resources.baseline_autorenew_white_18dp1;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(493, 218);
+            this.btnUpdate.Location = new System.Drawing.Point(497, 208);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Padding = new System.Windows.Forms.Padding(10);
             this.btnUpdate.Size = new System.Drawing.Size(151, 67);
@@ -736,7 +742,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_add_white_18dp;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(493, 145);
+            this.button1.Location = new System.Drawing.Point(497, 135);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10);
             this.button1.Size = new System.Drawing.Size(151, 67);
@@ -746,27 +752,47 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 20);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "O que deseja cadastrar?";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.cbTipo);
+            this.groupBox2.Location = new System.Drawing.Point(12, 134);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(461, 64);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            // 
             // CadastroLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(656, 505);
+            this.ClientSize = new System.Drawing.Size(658, 557);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtQtde);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnLivro);
             this.Controls.Add(this.pnJogo);
+            this.Controls.Add(this.pnLivro);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnFilme);
-            this.Controls.Add(this.pnMusica);
+            this.MinimumSize = new System.Drawing.Size(674, 526);
             this.Name = "CadastroLivro";
             this.Text = "CadastroLivro";
             this.Load += new System.EventHandler(this.CadastroLivro_Load);
@@ -783,6 +809,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -852,5 +880,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
