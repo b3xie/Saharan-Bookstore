@@ -70,7 +70,7 @@ namespace LivrariaSaharan
             string telefone = txtTelefone.Text;
 
 
-            conne.manutencaoDB
+           dt = conne.executarSQL
                 ("INSERT INTO tblFuncionario (Nome,Sexo,Telefone,email,RG,CPF,Cidade,Bairro,CEP,Endereco,Complemento,Salario,senhaLogin) VALUES " +
                 "('"+nome+"','"+sexo+"','"+telefone+"','"+email+"','"+rg+"','"+cpf+"','"+cidade+"','"+bairro+"','"+cep+"','"+endereco+"','"+complemento+"',"+salario+","+senha+")");
 
