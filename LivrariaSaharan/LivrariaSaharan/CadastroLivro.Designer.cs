@@ -88,7 +88,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -293,6 +292,7 @@
             // 
             // pnFilme
             // 
+            this.pnFilme.Controls.Add(this.pnMusica);
             this.pnFilme.Controls.Add(this.cbGeneroFilme);
             this.pnFilme.Controls.Add(this.label10);
             this.pnFilme.Controls.Add(this.label11);
@@ -303,7 +303,6 @@
             this.pnFilme.Controls.Add(this.txtCodBarFilme);
             this.pnFilme.Controls.Add(this.label14);
             this.pnFilme.Controls.Add(this.txtISANfilme);
-            this.pnFilme.Controls.Add(this.pnMusica);
             this.pnFilme.Location = new System.Drawing.Point(12, 249);
             this.pnFilme.Name = "pnFilme";
             this.pnFilme.Size = new System.Drawing.Size(479, 241);
@@ -718,23 +717,6 @@
             this.label27.TabIndex = 2;
             this.label27.Text = "Cadastro de estoque";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.DarkMagenta;
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Image = global::LivrariaSaharan.Properties.Resources.baseline_autorenew_white_18dp1;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(497, 208);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Padding = new System.Windows.Forms.Padding(10);
-            this.btnUpdate.Size = new System.Drawing.Size(151, 67);
-            this.btnUpdate.TabIndex = 16;
-            this.btnUpdate.Text = "Atualizar";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkMagenta;
@@ -780,7 +762,6 @@
             this.ClientSize = new System.Drawing.Size(658, 557);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtQtde);
             this.Controls.Add(this.button1);
@@ -788,10 +769,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.pnJogo);
-            this.Controls.Add(this.pnLivro);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnFilme);
+            this.Controls.Add(this.pnLivro);
+            this.Controls.Add(this.pnJogo);
             this.MinimumSize = new System.Drawing.Size(674, 526);
             this.Name = "CadastroLivro";
             this.Text = "CadastroLivro";
@@ -839,7 +820,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtQtde;
         private System.Windows.Forms.TextBox txtPreco;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel pnFilme;
         private System.Windows.Forms.ComboBox cbGeneroFilme;
         private System.Windows.Forms.Label label10;

@@ -23,6 +23,8 @@ namespace LivrariaSaharan
             InitializeComponent();
         }
 
+
+
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -132,5 +134,18 @@ namespace LivrariaSaharan
             this.Close();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                string value1 = row.Cells[0].Value.ToString();
+                SqlCommand delet = new SqlCommand("DELETE FROM tblLivros WHERE IdEstoque = '" + value1 + "'", conn);
+                int i = delet.ExecuteNonQuery();
+                if (i > 0)
+                    MessageBox.Show("Registro Deletado com sucesso!");
+
+
+            }
+        }
     }
 }
