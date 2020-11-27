@@ -58,6 +58,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtEduardo = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,14 +68,13 @@
             this.btnEx = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -406,6 +406,16 @@
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -482,7 +492,7 @@
             this.btnEx.ForeColor = System.Drawing.Color.White;
             this.btnEx.Image = global::LivrariaSaharan.Properties.Resources.baseline_delete_forever_white_18dp;
             this.btnEx.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEx.Location = new System.Drawing.Point(455, 565);
+            this.btnEx.Location = new System.Drawing.Point(455, 563);
             this.btnEx.Margin = new System.Windows.Forms.Padding(2);
             this.btnEx.Name = "btnEx";
             this.btnEx.Padding = new System.Windows.Forms.Padding(5);
@@ -519,7 +529,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::LivrariaSaharan.Properties.Resources.baseline_autorenew_white_18dp;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(571, 565);
+            this.button2.Location = new System.Drawing.Point(571, 563);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(10);
             this.button2.Size = new System.Drawing.Size(174, 72);
@@ -529,16 +539,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::LivrariaSaharan.Properties.Resources.CDP_LOGO;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -547,7 +547,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::LivrariaSaharan.Properties.Resources.baseline_group_add_white_18dp1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(751, 565);
+            this.button1.Location = new System.Drawing.Point(751, 563);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10);
             this.button1.Size = new System.Drawing.Size(206, 72);
@@ -561,7 +561,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 664);
+            this.ClientSize = new System.Drawing.Size(992, 662);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnEx);
             this.Controls.Add(this.button3);
@@ -585,9 +585,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

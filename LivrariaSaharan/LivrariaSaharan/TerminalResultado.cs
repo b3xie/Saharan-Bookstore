@@ -55,6 +55,7 @@ namespace LivrariaSaharan
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
             Terminal form = new Terminal();
             form.Show();
         }

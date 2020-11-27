@@ -104,26 +104,35 @@ namespace LivrariaSaharan
         {
             conne = new ConexaoBD();
             dt = new DataTable();
-
             dt = conne.executarSQL($"SELECT * FROM tblCliente WHERE CPF = {vendaCPF.Text}");
 
-            if (dt.Rows.Count != 0)
+
+            if (dt == null)
             {
-                vendaNome.Text = dt.Rows[0]["Nome"].ToString();
-                vendaEmail.Text = dt.Rows[0]["email"].ToString();
-                vendaCPF.Text = dt.Rows[0]["CPF"].ToString();
-                cbUF.SelectedItem = dt.Rows[0]["UF"].ToString();
-                vendaEndereco.Text = dt.Rows[0]["Endereco"].ToString();
-                vendaCidade.Text = dt.Rows[0]["Cidade"].ToString();
-                vendaComplemento.Text = dt.Rows[0]["Complemento"].ToString();
-                vendaCEP.Text = dt.Rows[0]["CEP"].ToString();
-                vendaTelefone.Text = dt.Rows[0]["Telefone"].ToString();
+                MessageBox.Show("Preencha o CPF!");
             }
             else
             {
-                MessageBox.Show("Registro não encontrado");
-            }
+                if (dt.Rows.Count > 0)
+                {
+                    vendaNome.Text = dt.Rows[0]["Nome"].ToString();
+                    vendaEmail.Text = dt.Rows[0]["email"].ToString();
+                    vendaCPF.Text = dt.Rows[0]["CPF"].ToString();
+                    cbUF.SelectedItem = dt.Rows[0]["UF"].ToString();
+                    vendaEndereco.Text = dt.Rows[0]["Endereco"].ToString();
+                    vendaCidade.Text = dt.Rows[0]["Cidade"].ToString();
+                    vendaComplemento.Text = dt.Rows[0]["Complemento"].ToString();
+                    vendaCEP.Text = dt.Rows[0]["CEP"].ToString();
+                    vendaTelefone.Text = dt.Rows[0]["Telefone"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Registro não encontrado");
+                }
 
+            }
+            
+            
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
