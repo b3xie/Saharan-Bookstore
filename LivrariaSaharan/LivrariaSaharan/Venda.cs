@@ -134,7 +134,7 @@ namespace LivrariaSaharan
             SqlCommand cmd = new SqlCommand("SELECT * FROM tblEstoque WHERE CodigoBarras='" + testando + "'", conn);
             TerminalResultado form = new TerminalResultado();
 
-
+            double preco = 0;
 
             dt = conne.executarSQL($"SELECT A.Titulo,B.Preco FROM tblLivros AS A INNER JOIN tblEstoque AS B ON B.idEstoque = A.idEstoque WHERE CodigoBarras = '{testando}'");
 
@@ -145,6 +145,7 @@ namespace LivrariaSaharan
                 {
                     string[] row = new string[] { dt.Rows[0]["Titulo"].ToString(), dt.Rows[0]["Preco"].ToString() };
                     dataGridView1.Rows.Add(row);
+                    preco = double.Parse(dt.Rows[0]["Preco"].ToString()) + preco;
                 }
                 else
                 {
@@ -153,6 +154,7 @@ namespace LivrariaSaharan
                     {
                         string[] row = new string[] { dt.Rows[0]["Titulo"].ToString(), dt.Rows[0]["Preco"].ToString() };
                         dataGridView1.Rows.Add(row);
+                        preco = double.Parse(dt.Rows[0]["Preco"].ToString()) + preco;
                     }
                     else
                     {
@@ -161,6 +163,7 @@ namespace LivrariaSaharan
                         {
                             string[] row = new string[] { dt.Rows[0]["Titulo"].ToString(), dt.Rows[0]["Preco"].ToString() };
                             dataGridView1.Rows.Add(row);
+                            preco = double.Parse(dt.Rows[0]["Preco"].ToString()) + preco;
                         }
                         else
                         {
@@ -169,6 +172,7 @@ namespace LivrariaSaharan
                             {
                                 string[] row = new string[] { dt.Rows[0]["Titulo"].ToString(), dt.Rows[0]["Preco"].ToString() };
                                 dataGridView1.Rows.Add(row);
+                                preco = double.Parse(dt.Rows[0]["Preco"].ToString()) + preco;
                             }
                             else
                             {
@@ -186,12 +190,7 @@ namespace LivrariaSaharan
             {
                 MessageBox.Show("Nenhum produto encontrado");
             }
-            int j = dataGridView1.Rows.Count;
-            for (int i = 0; i == j; i++)
-            {
-                double preco = Convert.ToDouble(dataGridView1.Rows[i].Cells[1].Value);
-
-            }
+            txtPreco.Text = preco.ToString();
         }
 
         private void Venda_Load(object sender, EventArgs e)
