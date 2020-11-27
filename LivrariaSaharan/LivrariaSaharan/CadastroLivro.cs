@@ -26,6 +26,8 @@ namespace LivrariaSaharan
 
         }
 
+
+
         public void hideUpdate()
         {
             btnUpdate.Visible = false;

@@ -84,6 +84,8 @@ namespace LivrariaSaharan
 
         private void button2_Click(object sender, EventArgs e)
         {
+            conne = new ConexaoBD();
+
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string cpfa = txtCpf.Text;
@@ -99,10 +101,9 @@ namespace LivrariaSaharan
             string telefone = txtTelefone.Text;
 
             string cpf = txtEduardo.Text;
-            SqlCommand pedro = new SqlCommand("", conn);
-            int i = pedro.ExecuteNonQuery();
-            
 
+
+            conne.manutencaoDB($"UPDATE tblFuncionario SET Nome = {nome},");
         }
 
         private void richTextBox12_TextChanged(object sender, EventArgs e)
