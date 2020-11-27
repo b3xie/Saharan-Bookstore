@@ -42,7 +42,6 @@ CREATE TABLE tblCliente(
 	CPF CHAR(11),
 	UF CHAR(2),
 	Cidade CHAR(50),
-	Bairro CHAR(50),
 	CEP CHAR(8),
 	Endereco CHAR(50),
 	Complemento CHAR(50)
@@ -111,6 +110,10 @@ CREATE TABLE tblJogos(
 	Genero INT FOREIGN KEY REFERENCES tblGenero
 )
 
+CREATE TABLE tblVenda(
+	idVenda INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	cliente INT FOREIGN KEY REFERENCES tblCliente(idCliente)
+)
 
 
 INSERT INTO tblExpediente VALUES (1,'Manha','3:00','11:00'),(2,'Tarde','11:00','19:00'),(3,'Noite','19:00','3:00')
@@ -119,24 +122,20 @@ VALUES
 ('Edson Shu','Masculino',1,'(21)942069696','edsondelicinha@totoso.kp','694204207','17490234816','SP','Diadema','Santana','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234),
 ('Gabriel Braço','Masculino',2,'(11)928627501','gabzxth@contato.kp','849235091','00000000000','RJ','Diadema','Santana','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234)
 
-INSERT INTO tblCliente (Nome,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento) VALUES 
-('João FranSHUsco','(11)989460300','jofrinha1000@gmail.com','00000000000','SP','São Paulo','Freguesia do Ó','28528185','Rua Doutor Telasko Avara,666','Apartamento 666')
-
-INSERT INTO tblCliente (Nome,Telefone,email,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento) VALUES
-('Arthures de Souza','(19)828383989','arthurmelim@arthur.com','00000000001','MG','Juíz de Dentro','Whtasapapap','02013002','Rua Pedro Tomé Souza Carlos','AP 41-A')
-
-INSERT INTO tblFuncionario (Nome,Sexo,Expediente,Telefone,email,RG,CPF,UF,Cidade,Bairro,CEP,Endereco,Complemento,Salario,senhaLogin)
-VALUES ('JucaGames','Masculino',2,'(21)982371832','pedroa@yahoo.com','234123984','00000000003','RJ','Suco32','Santa Carolina','16292262','Rua Vale do Cariri','Beco que tem o cara morto',30000,1234)
+INSERT INTO tblCliente (Nome,Telefone,email,CPF,UF,Cidade,CEP,Endereco,Complemento) VALUES 
+('João FranSHUsco','(11)989460300','jofrinha1000@gmail.com','00000000000','SP','São Paulo','28528185','Rua Doutor Telasko Avara,666','Apartamento 666')
 
 INSERT INTO tblEstoque VALUES ('000000000000',GETDATE(),20,1000),
 ('000000000001',GETDATE(),30,15),
 ('000000000002',GETDATE(),20,40),
 ('000000000003',GETDATE(),100,10),
 ('000000000004',GETDATE(),230,40)
+INSERT INTO tblEstoque VALUES ('000000000005',GETDATE(),20,5)
 
 INSERT INTO tblGenero VALUES (1,'Erótica'),(2,'Ação'),(3,'Comédia Românica'),(4,'Simulação')
 
 INSERT INTO tblLivros VALUES ('1111111111111',1,'As Aventuras de JofraLoL','Edson Shu',1)
+INSERT INTO tblLivros VALUES ('1111111111112',6,'Kama Sutra 2 com Vitor Shu','João Victor Vidal',1)
 
 INSERT INTO tblAutor VALUES (1,'John Cock','Norte-coreano')
 
@@ -153,15 +152,38 @@ INSERT INTO tblJogos VALUES ('000000000000',4,'Persona 69','Atlus','SEGA',3),
 
 SELECT * FROM tblFuncionario
 
-SELECT * FROM tblMusicas
+SELECT * FROM tblCliente
+
+SELECT idGenero FROM tblGenero WHERE Genero = 'Erótica'
 
 SELECT * FROM tblEstoque
 
-SELECT tblMusicas.*,tblAutor.Nome,tblEstoque.Preco FROM tblMusicas INNER JOIN tblAlbum ON tblAlbum.idAlbum = tblMusicas.Album INNER JOIN tblAutor ON tblAutor.idAutor = tblAlbum.Autor INNER JOIN tblEstoque ON tblEstoque.idEstoque = tblMusicas.idEstoque WHERE tblEstoque.CodigoBarras = '000000000001'
+SELECT * FROM tblMusicas
 
-SELECT * FROM tblFilmes WHERE  Titulo LIKE '%Edson% 4: %Sem% %tempo% %irmão%' OR ISAN = '00000000000'
+SELECT * FROM tblFilmes
 
-SELECT * FROM tblJogos WHERE Titulo LIKE '%P%' OR ISAN = '111'
+SELECT A.Titulo,B.Preco FROM tblLivros AS A INNER JOIN tblEstoque AS B ON B.idEstoque = A.idEstoque WHERE CodigoBarras = '000000000000'
 
-SELECT * FROM tblExpediente
+
+INSERT INTO tblEstoque VALUES ('000000000007','2020-11-22',10,200)
+
+SELECT idEstoque FROM tblEstoque WHERE CodigoBarras = '000000000007'
+
+GO
+CREATE PROCEDURE usp_Susus
+	
+	@codbar CHAR(12),
+	@data DATE,
+	@qtde INT,
+	@preco MONEY
+AS BEGIN 
+	DECLARE @id INT
+	INSERT INTO tblEstoque VALUES (@codbar,@data,@qtde,@preco)
+
+	SET @id = (SELECT idEstoque FROM tblEstoque WHERE CodigoBarras = @codbar)
+
+	RETURN @id
+END
+
+EXEC usp_Susus 1,'902345568752','2020-11-22',12,20
 
