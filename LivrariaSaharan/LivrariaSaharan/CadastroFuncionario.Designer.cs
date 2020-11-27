@@ -186,6 +186,7 @@
             this.txtCpf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpf.Location = new System.Drawing.Point(98, 113);
+            this.txtCpf.MaxLength = 11;
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(327, 34);
             this.txtCpf.TabIndex = 19;
@@ -431,7 +432,10 @@
             // 
             this.txtEduardo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEduardo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEduardo.Location = new System.Drawing.Point(102, 158);
+            this.txtEduardo.MaxLength = 11;
+            this.txtEduardo.Multiline = false;
             this.txtEduardo.Name = "txtEduardo";
             this.txtEduardo.Size = new System.Drawing.Size(690, 38);
             this.txtEduardo.TabIndex = 39;
@@ -491,7 +495,7 @@
             this.btnEx.ForeColor = System.Drawing.Color.White;
             this.btnEx.Image = global::LivrariaSaharan.Properties.Resources.baseline_delete_forever_white_18dp;
             this.btnEx.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEx.Location = new System.Drawing.Point(455, 563);
+            this.btnEx.Location = new System.Drawing.Point(635, 563);
             this.btnEx.Margin = new System.Windows.Forms.Padding(2);
             this.btnEx.Name = "btnEx";
             this.btnEx.Padding = new System.Windows.Forms.Padding(5);
