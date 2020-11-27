@@ -52,13 +52,13 @@ namespace LivrariaSaharan
 
         public void hideUpdate()
         {
-            btnUpdate.Visible = false;
+
             button1.Visible = true;
         }
         public void hideAdd()
         {
             button1.Visible = false;
-            btnUpdate.Visible = true;
+
         }
 
 

@@ -79,7 +79,9 @@
             // 
             this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(22, 197);
+            this.txtNome.Multiline = false;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(762, 50);
             this.txtNome.TabIndex = 7;
