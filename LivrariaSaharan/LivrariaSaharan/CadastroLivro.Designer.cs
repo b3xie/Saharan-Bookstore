@@ -47,16 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.pnFilme = new System.Windows.Forms.Panel();
-            this.cbGeneroFilme = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtEstudioFilme = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtTituloFilme = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtCodBarFilme = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtISANfilme = new System.Windows.Forms.TextBox();
             this.pnMusica = new System.Windows.Forms.Panel();
             this.cbAlbum = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -70,6 +60,16 @@
             this.txtCodBarMusica = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.txtISMN = new System.Windows.Forms.TextBox();
+            this.cbGeneroFilme = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtEstudioFilme = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtTituloFilme = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtCodBarFilme = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtISANfilme = new System.Windows.Forms.TextBox();
             this.txtQtde = new System.Windows.Forms.TextBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.pnJogo = new System.Windows.Forms.Panel();
@@ -178,6 +178,7 @@
             // 
             // pnLivro
             // 
+            this.pnLivro.Controls.Add(this.pnMusica);
             this.pnLivro.Controls.Add(this.cbGeneroLivro);
             this.pnLivro.Controls.Add(this.label9);
             this.pnLivro.Controls.Add(this.label8);
@@ -285,14 +286,13 @@
             this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtISBN.Location = new System.Drawing.Point(9, 27);
-            this.txtISBN.MaxLength = 14;
+            this.txtISBN.MaxLength = 13;
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(216, 27);
             this.txtISBN.TabIndex = 0;
             // 
             // pnFilme
             // 
-            this.pnFilme.Controls.Add(this.pnMusica);
             this.pnFilme.Controls.Add(this.cbGeneroFilme);
             this.pnFilme.Controls.Add(this.label10);
             this.pnFilme.Controls.Add(this.label11);
@@ -303,104 +303,10 @@
             this.pnFilme.Controls.Add(this.txtCodBarFilme);
             this.pnFilme.Controls.Add(this.label14);
             this.pnFilme.Controls.Add(this.txtISANfilme);
-            this.pnFilme.Location = new System.Drawing.Point(12, 249);
+            this.pnFilme.Location = new System.Drawing.Point(0, 0);
             this.pnFilme.Name = "pnFilme";
             this.pnFilme.Size = new System.Drawing.Size(479, 241);
             this.pnFilme.TabIndex = 14;
-            // 
-            // cbGeneroFilme
-            // 
-            this.cbGeneroFilme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGeneroFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGeneroFilme.FormattingEnabled = true;
-            this.cbGeneroFilme.Location = new System.Drawing.Point(9, 203);
-            this.cbGeneroFilme.Name = "cbGeneroFilme";
-            this.cbGeneroFilme.Size = new System.Drawing.Size(181, 28);
-            this.cbGeneroFilme.TabIndex = 10;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 183);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 17);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Gênero";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 123);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 17);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Estúdio";
-            // 
-            // txtEstudioFilme
-            // 
-            this.txtEstudioFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstudioFilme.Location = new System.Drawing.Point(9, 145);
-            this.txtEstudioFilme.Name = "txtEstudioFilme";
-            this.txtEstudioFilme.Size = new System.Drawing.Size(452, 27);
-            this.txtEstudioFilme.TabIndex = 6;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(9, 67);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 17);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Título";
-            // 
-            // txtTituloFilme
-            // 
-            this.txtTituloFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTituloFilme.Location = new System.Drawing.Point(9, 87);
-            this.txtTituloFilme.Name = "txtTituloFilme";
-            this.txtTituloFilme.Size = new System.Drawing.Size(452, 27);
-            this.txtTituloFilme.TabIndex = 4;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(244, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 17);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Codigo de Barras";
-            // 
-            // txtCodBarFilme
-            // 
-            this.txtCodBarFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodBarFilme.Location = new System.Drawing.Point(247, 27);
-            this.txtCodBarFilme.MaxLength = 12;
-            this.txtCodBarFilme.Name = "txtCodBarFilme";
-            this.txtCodBarFilme.Size = new System.Drawing.Size(214, 27);
-            this.txtCodBarFilme.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(9, 7);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 17);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "ISAN";
-            // 
-            // txtISANfilme
-            // 
-            this.txtISANfilme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtISANfilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtISANfilme.Location = new System.Drawing.Point(9, 27);
-            this.txtISANfilme.Name = "txtISANfilme";
-            this.txtISANfilme.Size = new System.Drawing.Size(216, 27);
-            this.txtISANfilme.TabIndex = 0;
             // 
             // pnMusica
             // 
@@ -414,6 +320,7 @@
             this.pnMusica.Controls.Add(this.txtTituloMusica);
             this.pnMusica.Controls.Add(this.label25);
             this.pnMusica.Controls.Add(this.txtCodBarMusica);
+            this.pnMusica.Controls.Add(this.pnFilme);
             this.pnMusica.Controls.Add(this.label26);
             this.pnMusica.Controls.Add(this.txtISMN);
             this.pnMusica.Location = new System.Drawing.Point(0, 0);
@@ -532,6 +439,100 @@
             this.txtISMN.Name = "txtISMN";
             this.txtISMN.Size = new System.Drawing.Size(216, 27);
             this.txtISMN.TabIndex = 0;
+            // 
+            // cbGeneroFilme
+            // 
+            this.cbGeneroFilme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbGeneroFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGeneroFilme.FormattingEnabled = true;
+            this.cbGeneroFilme.Location = new System.Drawing.Point(9, 203);
+            this.cbGeneroFilme.Name = "cbGeneroFilme";
+            this.cbGeneroFilme.Size = new System.Drawing.Size(181, 28);
+            this.cbGeneroFilme.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 183);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Gênero";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 123);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 17);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Estúdio";
+            // 
+            // txtEstudioFilme
+            // 
+            this.txtEstudioFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstudioFilme.Location = new System.Drawing.Point(9, 145);
+            this.txtEstudioFilme.Name = "txtEstudioFilme";
+            this.txtEstudioFilme.Size = new System.Drawing.Size(452, 27);
+            this.txtEstudioFilme.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(9, 67);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 17);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Título";
+            // 
+            // txtTituloFilme
+            // 
+            this.txtTituloFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTituloFilme.Location = new System.Drawing.Point(9, 87);
+            this.txtTituloFilme.Name = "txtTituloFilme";
+            this.txtTituloFilme.Size = new System.Drawing.Size(452, 27);
+            this.txtTituloFilme.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(244, 7);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 17);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Codigo de Barras";
+            // 
+            // txtCodBarFilme
+            // 
+            this.txtCodBarFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBarFilme.Location = new System.Drawing.Point(247, 27);
+            this.txtCodBarFilme.MaxLength = 12;
+            this.txtCodBarFilme.Name = "txtCodBarFilme";
+            this.txtCodBarFilme.Size = new System.Drawing.Size(214, 27);
+            this.txtCodBarFilme.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(9, 7);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(39, 17);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "ISAN";
+            // 
+            // txtISANfilme
+            // 
+            this.txtISANfilme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtISANfilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISANfilme.Location = new System.Drawing.Point(9, 27);
+            this.txtISANfilme.Name = "txtISANfilme";
+            this.txtISANfilme.Size = new System.Drawing.Size(216, 27);
+            this.txtISANfilme.TabIndex = 0;
             // 
             // txtQtde
             // 
@@ -770,7 +771,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnFilme);
             this.Controls.Add(this.pnLivro);
             this.Controls.Add(this.pnJogo);
             this.MinimumSize = new System.Drawing.Size(674, 526);
