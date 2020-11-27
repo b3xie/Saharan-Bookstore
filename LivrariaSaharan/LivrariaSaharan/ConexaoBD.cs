@@ -67,7 +67,7 @@ namespace LivrariaSaharan
                 }
                 else
                 {
-                    String strConexao = @"Data Source=" + Environment.MachineName + @"\SQLEXPRESS;Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
+                    String strConexao = @"Data Source=" + Environment.MachineName + ";Initial Catalog=Livraria;Persist Security Info=True;User ID=sa;Password=12345";
                     conn.ConnectionString = strConexao;
                     conn.Open();
                     return conn;
